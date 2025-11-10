@@ -1,0 +1,11 @@
+{
+  "pages": {},
+  "app": {
+    "[project]/src/app/(public)/SignUp/page": [
+      "static/media/ce62453a442c7f35-s.p.a9507876.woff2",
+      "static/media/ee8cae686f7b38ff-s.p.a8372e72.woff2"
+    ]
+  },
+  "appUsingSizeAdjust": true,
+  "pagesUsingSizeAdjust": false
+}

@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///Users/henriqueanjos/Workspace/projects/estudei/frontend/src/app/%28private%29/layout.tsx"],"sourcesContent":["import { SidebarProvider, SidebarTrigger } from \"@/components/ui/sidebar\";\nimport { AppSidebar } from \"@/components/AppSidebar\";\n\nexport default function RootLayout({\n    children,\n}: Readonly<{\n    children: React.ReactNode;\n}>) {\n    return (\n        <SidebarProvider defaultOpen={false}>\n            <AppSidebar />\n            <main className=\"w-full\">\n                <SidebarTrigger />\n                {children}\n            </main>\n        </SidebarProvider>\n    );\n}\n"],"names":[],"mappings":";;;;;AAAA;AACA;;;;AAEe,SAAS,WAAW,EAC/B,QAAQ,EAGV;IACE,qBACI,+YAAC,sJAAe;QAAC,aAAa;;0BAC1B,+YAAC,8IAAU;;;;;0BACX,+YAAC;gBAAK,WAAU;;kCACZ,+YAAC,qJAAc;;;;;oBACd;;;;;;;;;;;;;AAIjB","debugId":null}}]
+}

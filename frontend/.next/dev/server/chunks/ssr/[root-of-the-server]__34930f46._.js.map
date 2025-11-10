@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 18, "column": 0}, "map": {"version":3,"sources":["file:///Users/henriqueanjos/Workspace/projects/estudei/frontend/src/app/%28private%29/Home/page.tsx"],"sourcesContent":["import { ModeToggle } from \"@/components/ToggleMode\";\n\nexport default function Home(){\n    return(\n        <main>\n            Hello World! HOME\n            <ModeToggle />\n        </main>\n    )\n}"],"names":[],"mappings":";;;;;AAAA;;;AAEe,SAAS;IACpB,qBACI,+YAAC;;YAAK;0BAEF,+YAAC,8IAAU;;;;;;;;;;;AAGvB","debugId":null}}]
+}

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 14, "column": 0}, "map": {"version":3,"sources":["file:///Users/henriqueanjos/Workspace/projects/estudei/frontend/src/components/privateHeader.tsx"],"sourcesContent":["export function PrivateHeader() {\n    return (\n        <header>\n            <h1>Private Header</h1>\n        </header>\n    )\n}"],"names":[],"mappings":";;;;;;AAAO,SAAS;IACZ,qBACI,+YAAC;kBACG,cAAA,+YAAC;sBAAG;;;;;;;;;;;AAGhB","debugId":null}},
+    {"offset": {"line": 39, "column": 0}, "map": {"version":3,"sources":["file:///Users/henriqueanjos/Workspace/projects/estudei/frontend/src/app/%28private%29/Home/page.tsx"],"sourcesContent":["import { PrivateHeader } from \"@/components/privateHeader\";\n\nexport default function Home(){\n    return(\n        <main>\n            <PrivateHeader pageTitle=\"Dashboard\"/>\n        </main>\n    )\n}"],"names":[],"mappings":";;;;;AAAA;;;AAEe,SAAS;IACpB,qBACI,+YAAC;kBACG,cAAA,+YAAC,oJAAa;YAAC,WAAU;;;;;;;;;;;AAGrC","debugId":null}}]
+}

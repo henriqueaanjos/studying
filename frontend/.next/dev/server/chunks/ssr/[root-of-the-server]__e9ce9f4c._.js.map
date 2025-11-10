@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 18, "column": 0}, "map": {"version":3,"sources":["file:///Users/henriqueanjos/Workspace/projects/estudei/frontend/src/app/%28public%29/page.tsx"],"sourcesContent":["export default function Home(){\n    return(\n        <div>\n            Hello World! HOME\n        </div>\n    )\n}"],"names":[],"mappings":";;;;;;AAAe,SAAS;IACpB,qBACI,+YAAC;kBAAI;;;;;;AAIb","debugId":null}}]
+}

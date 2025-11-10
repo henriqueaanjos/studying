@@ -1,0 +1,9 @@
+{
+  "/(private)/Home/page": "app/(private)/Home/page.js",
+  "/(private)/Monitoring/page": "app/(private)/Monitoring/page.js",
+  "/(private)/Planner/page": "app/(private)/Planner/page.js",
+  "/(private)/Register/page": "app/(private)/Register/page.js",
+  "/(private)/Today/page": "app/(private)/Today/page.js",
+  "/(public)/SignIn/page": "app/(public)/SignIn/page.js",
+  "/(public)/page": "app/(public)/page.js"
+}
