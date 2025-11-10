@@ -1,24 +1,12 @@
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
-import serverlessExpress from '@vendia/serverless-express';
-import { Handler, Context, Callback } from 'aws-lambda';
-
-let server: Handler;
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
-  await app.init();
-  const expressApp = app.getHttpAdapter().getInstance();
-  return serverlessExpress({ app: expressApp });
+  app.enableCors({
+    origin: 'http://staurora.vercel.app:3000', // libera pro seu front local
+    credentials: true, // se estiver usando cookies/sessões
+  });
+  await app.listen(process.env.PORT ?? 3333);
 }
-
-export const handler: Handler = async (
-  event: any,
-  context: Context,
-  callback: Callback,
-) => {
-  server = server ?? (await bootstrap());
-  return server(event, context, callback);
-};
-
 bootstrap();
