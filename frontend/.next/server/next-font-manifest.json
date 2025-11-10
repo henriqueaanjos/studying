@@ -1,0 +1,42 @@
+{
+  "app": {
+    "[project]/src/app/(private)/Home/page": [
+      "static/media/ce62453a442c7f35-s.p.a9507876.woff2",
+      "static/media/ee8cae686f7b38ff-s.p.a8372e72.woff2"
+    ],
+    "[project]/src/app/(private)/Monitoring/page": [
+      "static/media/ce62453a442c7f35-s.p.a9507876.woff2",
+      "static/media/ee8cae686f7b38ff-s.p.a8372e72.woff2"
+    ],
+    "[project]/src/app/(private)/Planner/page": [
+      "static/media/ce62453a442c7f35-s.p.a9507876.woff2",
+      "static/media/ee8cae686f7b38ff-s.p.a8372e72.woff2"
+    ],
+    "[project]/src/app/(private)/Register/page": [
+      "static/media/ce62453a442c7f35-s.p.a9507876.woff2",
+      "static/media/ee8cae686f7b38ff-s.p.a8372e72.woff2"
+    ],
+    "[project]/src/app/(private)/Today/page": [
+      "static/media/ce62453a442c7f35-s.p.a9507876.woff2",
+      "static/media/ee8cae686f7b38ff-s.p.a8372e72.woff2"
+    ],
+    "[project]/src/app/(public)/SignIn/page": [
+      "static/media/ce62453a442c7f35-s.p.a9507876.woff2",
+      "static/media/ee8cae686f7b38ff-s.p.a8372e72.woff2"
+    ],
+    "[project]/src/app/(public)/SignUp/page": [
+      "static/media/ce62453a442c7f35-s.p.a9507876.woff2",
+      "static/media/ee8cae686f7b38ff-s.p.a8372e72.woff2"
+    ],
+    "[project]/src/app/(public)/page": [
+      "static/media/ce62453a442c7f35-s.p.a9507876.woff2",
+      "static/media/ee8cae686f7b38ff-s.p.a8372e72.woff2"
+    ],
+    "[project]/src/app/_not-found/page": [
+      "static/media/ce62453a442c7f35-s.p.a9507876.woff2"
+    ]
+  },
+  "appUsingSizeAdjust": true,
+  "pages": {},
+  "pagesUsingSizeAdjust": false
+}

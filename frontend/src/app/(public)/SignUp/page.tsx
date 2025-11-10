@@ -7,7 +7,7 @@ import { useAuth } from "@/hooks/useAuth";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import Link from "next/link";
-import { redirect, useSearchParams } from "next/navigation";
+import { redirect } from "next/navigation";
 import { Controller, useForm } from "react-hook-form";
 import * as yup from "yup";
 
@@ -30,11 +30,8 @@ const signUpSchema = yup.object({
 
 
 export default function SignUp() {
-    const params = useSearchParams();
 
     const queryClient = useQueryClient();
-
-    const id = params.get('id');
 
     const { control, handleSubmit, formState: { errors } } = useForm({
         resolver: yupResolver(signUpSchema),
@@ -79,7 +76,7 @@ export default function SignUp() {
                                     label="Nome"
                                     onChange={onChange}
                                     value={value}
-                                    errors={id ? errors.name?.message : errors.name?.message}
+                                    errors={errors.name?.message}
                                     placeholder="Digite seu nome"
                                 />
                             )}
@@ -92,7 +89,7 @@ export default function SignUp() {
                                     label="Email"
                                     onChange={onChange}
                                     value={value}
-                                    errors={id ? errors.email?.message : errors.email?.message}
+                                    errors={errors.email?.message}
                                     placeholder="Digite seu e-mail"
                                 />
                             )}

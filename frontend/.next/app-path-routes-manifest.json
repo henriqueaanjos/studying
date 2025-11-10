@@ -1,0 +1,12 @@
+{
+  "/(private)/Home/page": "/Home",
+  "/(private)/Monitoring/page": "/Monitoring",
+  "/(private)/Planner/page": "/Planner",
+  "/(private)/Register/page": "/Register",
+  "/(private)/Today/page": "/Today",
+  "/(public)/SignIn/page": "/SignIn",
+  "/(public)/SignUp/page": "/SignUp",
+  "/(public)/page": "/",
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found"
+}
