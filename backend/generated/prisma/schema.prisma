@@ -1,0 +1,112 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+  output   = "../generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        String    @id @default(uuid())
+  name      String
+  email     String    @unique
+  password  String
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  Contest   Contest[]
+
+  @@map("users")
+}
+
+model Contest {
+  id              String       @id @default(uuid())
+  companyName     String
+  position        String
+  exameDate       DateTime
+  dedicationHours Int
+  userId          String
+  user            User         @relation(fields: [userId], references: [id], onDelete: Cascade)
+  Discipline      Discipline[]
+
+  @@map("contests")
+}
+
+model Discipline {
+  id        String   @id @default(uuid())
+  name      String
+  color     String
+  contestId String
+  contest   Contest  @relation(fields: [contestId], references: [id], onDelete: Cascade)
+  Lesson    Lesson[]
+
+  @@map("disciplines")
+}
+
+model Stage {
+  id          String   @id @default(uuid())
+  name        String
+  description String
+  Lesson      Lesson[]
+
+  @@map("stages")
+}
+
+model Lesson {
+  id           String     @id @default(uuid())
+  numberLesson Int
+  disciplineId String
+  stageId      String
+  stage        Stage      @relation(fields: [stageId], references: [id], onDelete: Cascade)
+  discipline   Discipline @relation(fields: [disciplineId], references: [id], onDelete: Cascade)
+  Topic        Topic[]
+  Content      Content[]
+
+  @@map("lessons")
+}
+
+model Topic {
+  id       String @id @default(uuid())
+  name     String
+  lessonId String
+  lesson   Lesson @relation(fields: [lessonId], references: [id], onDelete: Cascade)
+
+  @@map("topics")
+}
+
+model ContentType {
+  id      String    @id @default(uuid())
+  name    String
+  Content Content[]
+
+  @@map("content_types")
+}
+
+model Content {
+  id              String      @id @default(uuid())
+  numberContent   Int
+  durationSeconds Int
+  lessonId        String
+  contentTypeId   String
+  lesson          Lesson      @relation(fields: [lessonId], references: [id], onDelete: Cascade)
+  contentType     ContentType @relation(fields: [contentTypeId], references: [id], onDelete: Cascade)
+  Register        Register[]
+
+  @@map("contents")
+}
+
+model Register {
+  id           String   @id @default(uuid())
+  contentId    String
+  registeredAt DateTime @default(now())
+  content      Content  @relation(fields: [contentId], references: [id], onDelete: Cascade)
+
+  @@map("registers")
+}
