@@ -1,12 +1,16 @@
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
+import { Server } from 'http';
 
-async function bootstrap() {
-  const app = await NestFactory.create(AppModule);
-  // app.enableCors({
-  //   origin: 'http://staurora.vercel.app', // libera pro seu front local
-  //   credentials: true, // se estiver usando cookies/sessões
-  // });
-  await app.listen(process.env.PORT ?? 3333);
-}
-bootstrap();
+let server: Server;
+
+export const handler = async (req, res) => {
+  if (!server) {
+    const app = await NestFactory.create(AppModule);
+    await app.init();
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+    server = app.getHttpAdapter().getInstance();
+  }
+
+  return server(req, res);
+};
