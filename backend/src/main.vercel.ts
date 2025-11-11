@@ -10,6 +10,13 @@ export default async function handler(req: Request, res: Response) {
     const expressApp = express();
     const adapter = new ExpressAdapter(expressApp);
     const app = await NestFactory.create(AppModule, adapter);
+
+    app.enableCors({
+      origin: '*',
+      methods: 'GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS',
+      credentials: true,
+    });
+
     await app.init();
     cachedApp = expressApp;
   }
