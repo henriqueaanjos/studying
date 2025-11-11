@@ -9,6 +9,7 @@ import { useMutation, useQueryClient } from "@tanstack/react-query";
 import Link from "next/link";
 import { redirect } from "next/navigation";
 import { Controller, useForm } from "react-hook-form";
+import { toast } from "sonner";
 import * as yup from "yup";
 
 interface SignUpFormData {
@@ -39,7 +40,7 @@ export default function SignUp() {
 
     const { signUp } = useAuth();
 
-    const { mutateAsync: signUpFn, isError } = useMutation({
+    const { mutateAsync: signUpFn } = useMutation({
         mutationFn: async (data: SignUpFormData) => {
             await signUp(data);
         },
@@ -47,11 +48,12 @@ export default function SignUp() {
             queryClient.setQueryData(['users'], (users: UserDTO[]) => {
                 return [...users, { id: data, name: variables.name, email: variables.email }]
             })
-            alert("Usuário Adicionado com sucesso!");
+            toast.success("Usuário Adicionado com sucesso!");
             redirect('/List')
         },
         onError: (error) => {
             console.error("Erro ao criar Usuário:", error);
+            toast.error("Erro ao criar Usuário. Tente novamente.");
         }
     })
 
@@ -123,11 +125,6 @@ export default function SignUp() {
                             )}
                         />
                         <div className="flex flex-col items-center justify-center">
-                            {isError && (
-                                <p className="text-red-500 text-sm font-medium text-center">
-                                    Erro ao fazer login. Verifique suas credenciais!
-                                </p>
-                            )}
                             <button
                                 onClick={handleSubmit(onSubmit)}
                                 className="mt-6 cursor-pointer w-full rounded-lg bg-primary text-white shadow-2xl hover:shadow-md hover:brightness-90 hover:scale-95 p-2 font-black text-sm uppercase transition-all duration-300"
