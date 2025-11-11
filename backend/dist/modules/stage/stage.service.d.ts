@@ -1,5 +1,5 @@
 import { StageDTO } from './stage.dto';
-import { PrismaService } from 'src/database/PrismaService';
+import { PrismaService } from '../../database/PrismaService';
 export declare class StageService {
     private prisma;
     constructor(prisma: PrismaService);

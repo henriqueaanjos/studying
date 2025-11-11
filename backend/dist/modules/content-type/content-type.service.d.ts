@@ -1,5 +1,5 @@
 import { ContentTypeDTO } from './content-type.dto';
-import { PrismaService } from 'src/database/PrismaService';
+import { PrismaService } from '../../database/PrismaService';
 export declare class ContentTypeService {
     private prisma;
     constructor(prisma: PrismaService);

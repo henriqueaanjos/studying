@@ -12,6 +12,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.RegisterService = void 0;
 const common_1 = require("@nestjs/common");
 const PrismaService_1 = require("../../database/PrismaService");
+;
 let RegisterService = class RegisterService {
     prisma;
     constructor(prisma) {

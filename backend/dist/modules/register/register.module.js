@@ -11,6 +11,7 @@ const common_1 = require("@nestjs/common");
 const register_service_1 = require("./register.service");
 const register_controller_1 = require("./register.controller");
 const PrismaService_1 = require("../../database/PrismaService");
+;
 let RegisterModule = class RegisterModule {
 };
 exports.RegisterModule = RegisterModule;

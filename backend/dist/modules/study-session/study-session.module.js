@@ -11,6 +11,7 @@ const common_1 = require("@nestjs/common");
 const study_session_service_1 = require("./study-session.service");
 const study_session_controller_1 = require("./study-session.controller");
 const PrismaService_1 = require("../../database/PrismaService");
+;
 let StudySessionModule = class StudySessionModule {
 };
 exports.StudySessionModule = StudySessionModule;

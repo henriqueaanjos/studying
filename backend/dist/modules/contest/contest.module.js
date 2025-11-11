@@ -11,6 +11,7 @@ const common_1 = require("@nestjs/common");
 const contest_service_1 = require("./contest.service");
 const contest_controller_1 = require("./contest.controller");
 const PrismaService_1 = require("../../database/PrismaService");
+;
 let ContestModule = class ContestModule {
 };
 exports.ContestModule = ContestModule;

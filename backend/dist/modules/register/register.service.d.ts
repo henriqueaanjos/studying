@@ -1,5 +1,5 @@
 import { RegisterDTO } from './register.dto';
-import { PrismaService } from 'src/database/PrismaService';
+import { PrismaService } from '../../database/PrismaService';
 export declare class RegisterService {
     private prisma;
     constructor(prisma: PrismaService);

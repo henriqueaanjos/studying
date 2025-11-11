@@ -1,4 +1,4 @@
-import { PrismaService } from 'src/database/PrismaService';
+import { PrismaService } from '../../database/PrismaService';
 import { LessonDTO } from './lesson.dto';
 export declare class LessonService {
     private prisma;

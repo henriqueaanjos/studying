@@ -11,6 +11,7 @@ const common_1 = require("@nestjs/common");
 const content_service_1 = require("./content.service");
 const content_controller_1 = require("./content.controller");
 const PrismaService_1 = require("../../database/PrismaService");
+;
 let ContentModule = class ContentModule {
 };
 exports.ContentModule = ContentModule;

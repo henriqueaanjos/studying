@@ -1,7 +1,7 @@
 import { Module } from '@nestjs/common';
 import { DisciplineService } from './discipline.service';
 import { DisciplineController } from './discipline.controller';
-import { PrismaService } from 'src/database/PrismaService';
+import { PrismaService } from '../../database/PrismaService';;
 
 @Module({
   controllers: [DisciplineController],
