@@ -19,13 +19,26 @@ const content_type_module_1 = require("./modules/content-type/content-type.modul
 const content_module_1 = require("./modules/content/content.module");
 const register_module_1 = require("./modules/register/register.module");
 const study_session_module_1 = require("./modules/study-session/study-session.module");
+const hello_controller_1 = require("./modules/hello.controller");
 let AppModule = class AppModule {
 };
 exports.AppModule = AppModule;
 exports.AppModule = AppModule = __decorate([
     (0, common_1.Module)({
-        imports: [user_module_1.UserModule, auth_module_1.AuthModule, contest_module_1.ContestModule, discipline_module_1.DisciplineModule, lesson_module_1.LessonModule, topic_module_1.TopicModule, stage_module_1.StageModule, content_type_module_1.ContentTypeModule, content_module_1.ContentModule, register_module_1.RegisterModule, study_session_module_1.StudySessionModule],
-        controllers: [],
+        imports: [
+            user_module_1.UserModule,
+            auth_module_1.AuthModule,
+            contest_module_1.ContestModule,
+            discipline_module_1.DisciplineModule,
+            lesson_module_1.LessonModule,
+            topic_module_1.TopicModule,
+            stage_module_1.StageModule,
+            content_type_module_1.ContentTypeModule,
+            content_module_1.ContentModule,
+            register_module_1.RegisterModule,
+            study_session_module_1.StudySessionModule,
+        ],
+        controllers: [hello_controller_1.HelloController],
         providers: [],
     })
 ], AppModule);

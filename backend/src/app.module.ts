@@ -10,6 +10,7 @@ import { ContentTypeModule } from './modules/content-type/content-type.module';
 import { ContentModule } from './modules/content/content.module';
 import { RegisterModule } from './modules/register/register.module';
 import { StudySessionModule } from './modules/study-session/study-session.module';
+import { HelloController } from './modules/hello.controller';
 
 @Module({
   imports: [
@@ -25,7 +26,7 @@ import { StudySessionModule } from './modules/study-session/study-session.module
     RegisterModule,
     StudySessionModule,
   ],
-  controllers: [],
+  controllers: [HelloController],
   providers: [],
 })
 export class AppModule {}
