@@ -6,7 +6,6 @@ import {
 import { PrismaService } from '../../database/PrismaService';
 import * as bcrypt from 'bcrypt';
 import { JwtService } from '@nestjs/jwt';
-import { setRedis } from '../../libs/redisConfig';
 
 @Injectable()
 export class AuthService {
@@ -33,8 +32,6 @@ export class AuthService {
     }
 
     const payload = { sub: user.id };
-
-    await setRedis(`user-${user.id}`, JSON.stringify(user));
 
     return { access_token: await this.jwtService.signAsync(payload) };
   }

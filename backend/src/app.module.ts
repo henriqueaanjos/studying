@@ -12,7 +12,19 @@ import { RegisterModule } from './modules/register/register.module';
 import { StudySessionModule } from './modules/study-session/study-session.module';
 
 @Module({
-  imports: [UserModule, AuthModule, ContestModule, DisciplineModule, LessonModule, TopicModule, StageModule, ContentTypeModule, ContentModule, RegisterModule, StudySessionModule],
+  imports: [
+    UserModule,
+    AuthModule,
+    ContestModule,
+    DisciplineModule,
+    LessonModule,
+    TopicModule,
+    StageModule,
+    ContentTypeModule,
+    ContentModule,
+    RegisterModule,
+    StudySessionModule,
+  ],
   controllers: [],
   providers: [],
 })

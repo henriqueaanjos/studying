@@ -13,7 +13,6 @@ exports.UserService = void 0;
 const common_1 = require("@nestjs/common");
 const PrismaService_1 = require("../../database/PrismaService");
 const bcrypt = require("bcrypt");
-const redisConfig_1 = require("../../libs/redisConfig");
 let UserService = class UserService {
     prisma;
     constructor(prisma) {
@@ -35,7 +34,6 @@ let UserService = class UserService {
                 password: hashPassword,
             },
         });
-        await (0, redisConfig_1.setRedis)(`user-${user.id}`, JSON.stringify(user));
         return user;
     }
     async findAll() {
@@ -50,10 +48,6 @@ let UserService = class UserService {
         });
     }
     async findOne(id) {
-        const userRedis = await (0, redisConfig_1.getRedis)(`user-${id}`);
-        if (userRedis) {
-            return JSON.parse(userRedis);
-        }
         const user = await this.prisma.user.findUnique({
             where: {
                 id,

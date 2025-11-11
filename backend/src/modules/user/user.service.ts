@@ -6,7 +6,6 @@ import {
 import { PrismaService } from '../../database/PrismaService';
 import { UserDTO } from './user.dto';
 import * as bcrypt from 'bcrypt';
-import { getRedis, setRedis } from '../../libs/redisConfig';
 
 @Injectable()
 export class UserService {
@@ -31,8 +30,6 @@ export class UserService {
       },
     });
 
-    await setRedis(`user-${user.id}`, JSON.stringify(user));
-
     return user;
   }
 
@@ -49,10 +46,6 @@ export class UserService {
   }
 
   async findOne(id: string) {
-    const userRedis = await getRedis(`user-${id}`);
-    if (userRedis) {
-      return JSON.parse(userRedis) as UserDTO;
-    }
     const user = await this.prisma.user.findUnique({
       where: {
         id,

@@ -18,7 +18,7 @@ export declare class UserController {
         createdAt: Date;
         updatedAt: Date;
     }[]>;
-    findOne(id: string): Promise<UserDTO | {
+    findOne(id: string): Promise<{
         id: string;
         name: string;
         email: string;

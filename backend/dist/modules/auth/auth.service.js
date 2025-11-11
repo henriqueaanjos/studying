@@ -14,7 +14,6 @@ const common_1 = require("@nestjs/common");
 const PrismaService_1 = require("../../database/PrismaService");
 const bcrypt = require("bcrypt");
 const jwt_1 = require("@nestjs/jwt");
-const redisConfig_1 = require("../../libs/redisConfig");
 let AuthService = class AuthService {
     prisma;
     jwtService;
@@ -36,7 +35,6 @@ let AuthService = class AuthService {
             throw new common_1.UnauthorizedException('Invalid credentials');
         }
         const payload = { sub: user.id };
-        await (0, redisConfig_1.setRedis)(`user-${user.id}`, JSON.stringify(user));
         return { access_token: await this.jwtService.signAsync(payload) };
     }
 };
