@@ -5,7 +5,7 @@ import { AppModule } from './app.module';
 
 let cachedApp: express.Express;
 
-export const handler = async (req: Request, res: Response) => {
+export default async function handler(req: Request, res: Response) {
   if (!cachedApp) {
     const expressApp = express();
     const adapter = new ExpressAdapter(expressApp);
@@ -15,4 +15,4 @@ export const handler = async (req: Request, res: Response) => {
   }
 
   return cachedApp(req, res);
-};
+}
