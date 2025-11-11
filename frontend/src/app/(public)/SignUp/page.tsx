@@ -2,12 +2,12 @@
 
 import { Input } from "@/components/Input";
 import { Logo } from "@/components/Logo";
-import { UserDTO } from "@/dto/user";
 import { useAuth } from "@/hooks/useAuth";
 import { yupResolver } from "@hookform/resolvers/yup";
-import { useMutation, useQueryClient } from "@tanstack/react-query";
+import { useMutation } from "@tanstack/react-query";
 import Link from "next/link";
-import { redirect } from "next/navigation";
+import { useRouter } from "next/navigation";
+import { useState } from "react";
 import { Controller, useForm } from "react-hook-form";
 import { toast } from "sonner";
 import * as yup from "yup";
@@ -31,29 +31,25 @@ const signUpSchema = yup.object({
 
 
 export default function SignUp() {
-
-    const queryClient = useQueryClient();
-
+    const [error, setError] = useState('');
     const { control, handleSubmit, formState: { errors } } = useForm({
         resolver: yupResolver(signUpSchema),
     });
 
     const { signUp } = useAuth();
+    const router = useRouter();
 
     const { mutateAsync: signUpFn } = useMutation({
         mutationFn: async (data: SignUpFormData) => {
             await signUp(data);
         },
-        onSuccess: (data, variables: SignUpFormData) => {
-            queryClient.setQueryData(['users'], (users: UserDTO[]) => {
-                return [...users, { id: data, name: variables.name, email: variables.email }]
-            })
+        onSuccess: () => {
             toast.success("Usuário Adicionado com sucesso!");
-            redirect('/List')
+            router.push('/Home')
         },
         onError: (error) => {
-            console.error("Erro ao criar Usuário:", error);
-            toast.error("Erro ao criar Usuário. Tente novamente.");
+            console.error(error);
+            setError(error.message);
         }
     })
 
@@ -125,6 +121,11 @@ export default function SignUp() {
                             )}
                         />
                         <div className="flex flex-col items-center justify-center">
+                            {error != '' && (
+                                <p className="text-red-500 text-sm font-medium text-center">
+                                    {error}
+                                </p>
+                            )}
                             <button
                                 onClick={handleSubmit(onSubmit)}
                                 className="mt-6 cursor-pointer w-full rounded-lg bg-primary text-white shadow-2xl hover:shadow-md hover:brightness-90 hover:scale-95 p-2 font-black text-sm uppercase transition-all duration-300"

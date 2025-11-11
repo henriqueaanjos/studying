@@ -6,7 +6,8 @@ import { useAuth } from "@/hooks/useAuth";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useMutation } from "@tanstack/react-query";
 import Link from "next/link";
-import { redirect } from "next/navigation";
+import { useRouter } from "next/navigation";
+import { useState } from "react";
 import { Controller, useForm } from "react-hook-form";
 import * as yup from "yup";
 
@@ -21,22 +22,25 @@ const signInSchema = yup.object({
 })
 
 export default function SignIn() {
+    const [error, setError] = useState('');
     const { control, handleSubmit, formState: { errors } } = useForm({
         resolver: yupResolver(signInSchema),
     });
 
     const { signIn } = useAuth();
+    const router = useRouter();
 
-    const { mutateAsync: signInFn, isError} = useMutation({
+    const { mutateAsync: signInFn} = useMutation({
         mutationKey: ['signIn'],
         mutationFn: async (data: SignInFormData) => {
             await signIn(data.email, data.password);
         },
         onSuccess: () => {
-            redirect('/Home');
+            router.push('/Home');
         },
         onError: (error) => {
-            console.error("Erro ao fazer login:", error);
+            console.error(error);
+            setError(error.message);
         }
     })
 
@@ -81,9 +85,9 @@ export default function SignIn() {
                             )}
                         />
                         <div className="flex flex-col items-center justify-center">
-                            {isError && (
+                            {error != '' && (
                                 <p className="text-red-500 text-sm font-medium text-center">
-                                    Erro ao fazer login. Verifique suas credenciais!
+                                    {error}
                                 </p>
                             )}
                             <button

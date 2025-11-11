@@ -49,55 +49,57 @@ export function PrivateHeader({ pageTitle }: Props) {
         setShowNewContestModal(false)
     }
 
-
     return (
         <header className="w-full flex flex-row items-center justify-between mb-8">
             <h1 className="text-4xl font-black">{pageTitle}</h1>
-            <div className="flex items-center justify-center gap-2">
-                <DropdownMenu>
-                    <DropdownMenuTrigger asChild>
-                        <Button variant='outline'>{allContests && allContests.length > 0 ?
-                            `${contest.position} - ${contest.companyName}`
-                            : 'Selecione o Concurso'
-                        }
-                            <ChevronDown size={16} />
-                        </Button>
-                    </DropdownMenuTrigger>
-                    <DropdownMenuContent align="end">
-                        {allContests && allContests.filter(c => c.id !== contest.id).map((cont) =>
-                            <DropdownMenuItem key={cont.id} onSelect={() => onChangeContest(cont)}>
-                                {cont.position} - {cont.companyName}
-                            </DropdownMenuItem>
-                        )}
-                        <DropdownMenuItem onSelect={handleOpenNewContestModal}>
-                            <Plus size={16} />
-                            Adicionar novo Concurso
-                        </DropdownMenuItem>
-                    </DropdownMenuContent>
-                </DropdownMenu>
-                <div className="flex items-center justify-center">
-                    <DropdownMenu>
-                        <DropdownMenuTrigger asChild>
-                            <Button variant='ghost'>
-                                <Plus size={16} className="text-primary" />
-                            </Button>
-                        </DropdownMenuTrigger>
-                        <DropdownMenuContent align="end">
-                            <DropdownMenuItem onSelect={handleOpenNewDisciplineModal}>
-                                <BookA size={16} className="mr-2" />
-                                Adicionar Disciplina
-                            </DropdownMenuItem>
-                            <DropdownMenuItem onSelect={handleOpenNewLessonModal}>
-                                <BookOpenCheck size={16} className="mr-2" />
-                                Adicionar Aula
-                            </DropdownMenuItem>
-                            <DropdownMenuItem onSelect={handleOpenNewContentModal}>
-                                <FileVideoCamera size={16} className="mr-2" />
-                                Adicionar Conteúdo
-                            </DropdownMenuItem>
-                        </DropdownMenuContent>
-                    </DropdownMenu>
-                </div>
+            <div className="flex flex-row items-center gap-4">
+                {allContests && allContests.length > 0 &&
+                    <div className="flex items-center justify-center gap-2">
+                        <div className="flex items-center justify-center">
+                            <DropdownMenu>
+                                <DropdownMenuTrigger asChild>
+                                    <Button variant='ghost'>
+                                        <Plus size={16} className="text-primary" />
+                                    </Button>
+                                </DropdownMenuTrigger>
+                                <DropdownMenuContent align="end">
+                                    <DropdownMenuItem onSelect={handleOpenNewDisciplineModal}>
+                                        <BookA size={16} className="mr-2" />
+                                        Adicionar Disciplina
+                                    </DropdownMenuItem>
+                                    <DropdownMenuItem onSelect={handleOpenNewLessonModal}>
+                                        <BookOpenCheck size={16} className="mr-2" />
+                                        Adicionar Aula
+                                    </DropdownMenuItem>
+                                    <DropdownMenuItem onSelect={handleOpenNewContentModal}>
+                                        <FileVideoCamera size={16} className="mr-2" />
+                                        Adicionar Conteúdo
+                                    </DropdownMenuItem>
+                                </DropdownMenuContent>
+                            </DropdownMenu>
+                        </div>
+                        <DropdownMenu>
+                            <DropdownMenuTrigger asChild>
+                                <Button variant='outline'>{allContests && allContests.length > 0 ?
+                                    `${contest.position} - ${contest.companyName}`
+                                    : 'Selecione o Concurso'
+                                }
+                                    <ChevronDown size={16} />
+                                </Button>
+                            </DropdownMenuTrigger>
+                            <DropdownMenuContent align="end">
+                                {allContests && allContests.filter(c => c.id !== contest.id).map((cont) =>
+                                    <DropdownMenuItem key={cont.id} onSelect={() => onChangeContest(cont)}>
+                                        {cont.position} - {cont.companyName}
+                                    </DropdownMenuItem>
+                                )}
+                                <DropdownMenuItem onSelect={handleOpenNewContestModal}>
+                                    <Plus size={16} />
+                                    Adicionar novo Concurso
+                                </DropdownMenuItem>
+                            </DropdownMenuContent>
+                        </DropdownMenu>
+                    </div>}
             </div>
             <NewDisciplineModal isOpen={showNewDisciplineModal} onClose={handleCloseNewDisciplineModal} />
             <NewLessonModal isOpen={showNewLessonModal} onClose={handleCloseNewLessonModal} />

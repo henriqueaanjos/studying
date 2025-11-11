@@ -4,6 +4,7 @@ import { createContext, ReactNode, useEffect, useState } from "react";
 import { contestDTO } from "@/dto/contest";
 import { useQuery } from "@tanstack/react-query";
 import { getAllContest } from "@/services/contest.request";
+import { useAuth } from "@/hooks/useAuth";
 
 interface ContestContextProps {
     allContests?: contestDTO[];
@@ -18,8 +19,10 @@ interface ContestContextProviderProps {
 export const ContestContext = createContext<ContestContextProps>({} as ContestContextProps);
 
 export function ContestContextProvider({ children }: ContestContextProviderProps) {
+    const {user} = useAuth();
     const { data: allContests } = useQuery({
         queryKey: ['contests'],
+        enabled: !!user?.id, 
         queryFn: getAllContest,
     })
 

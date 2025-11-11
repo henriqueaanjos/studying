@@ -10,6 +10,8 @@ import { Request } from 'express';
 type JwtPayload = {
   sub: {
     id: string;
+    name: string;
+    email: string;
   };
 };
 
@@ -33,7 +35,7 @@ export class AuthGuard implements CanActivate {
           secret: process.env.JWT_SECRET,
         },
       );
-      request['user'] = payload.sub;
+      request['user'] = payload.sub.id;
     } catch {
       throw new UnauthorizedException();
     }

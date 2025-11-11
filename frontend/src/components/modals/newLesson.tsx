@@ -15,6 +15,7 @@ import { toast } from "sonner";
 import { createTopic } from "@/services/topics.request";
 import { getAllDiscipline } from "@/services/discipline.request";
 import { useEffect } from "react";
+import { useContest } from "@/hooks/useContest";
 
 type DialogProps = {
     isOpen: boolean;
@@ -31,6 +32,8 @@ export function NewLessonModal({ isOpen, onClose }: DialogProps) {
     const { control, handleSubmit, formState: { errors }, reset } = useForm({
         resolver: yupResolver(lessonSchema),
     })
+
+    const { contest } = useContest();
 
     const { mutateAsync: newLesson } = useMutation({
         mutationFn: async (data: lessonDTO) => {
@@ -66,6 +69,7 @@ export function NewLessonModal({ isOpen, onClose }: DialogProps) {
 
     const { data: disciplines } = useQuery({
         queryKey: ['disciplines'],
+        enabled: !!contest?.id, 
         queryFn: getAllDiscipline,
     })
 

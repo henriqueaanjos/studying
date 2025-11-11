@@ -1,5 +1,5 @@
 import axios from "axios";  
 
 export const api = axios.create({
-    baseURL: 'https://api-staurora.vercel.app',
+    baseURL: process.env.NEXT_PUBLIC_BACKEND_URL,
 });

@@ -200,6 +200,10 @@ const config = {
         "fromEnvVar": null,
         "value": "darwin-arm64",
         "native": true
+      },
+      {
+        "fromEnvVar": null,
+        "value": "rhel-openssl-3.0.x"
       }
     ],
     "previewFeatures": [],
@@ -221,13 +225,13 @@ const config = {
   "inlineDatasources": {
     "db": {
       "url": {
-        "fromEnvVar": "DATABASE_URL",
+        "fromEnvVar": "POSTGRES_PRISMA_URL",
         "value": null
       }
     }
   },
-  "inlineSchema": "// This is your Prisma schema file,\n// learn more about it in the docs: https://pris.ly/d/prisma-schema\n\n// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?\n// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init\n\ngenerator client {\n  provider = \"prisma-client-js\"\n  output   = \"../generated/prisma\"\n}\n\ndatasource db {\n  provider = \"postgresql\"\n  url      = env(\"DATABASE_URL\")\n}\n\nmodel User {\n  id        String    @id @default(uuid())\n  name      String\n  email     String    @unique\n  password  String\n  createdAt DateTime  @default(now())\n  updatedAt DateTime  @updatedAt\n  Contest   Contest[]\n\n  @@map(\"users\")\n}\n\nmodel Contest {\n  id              String       @id @default(uuid())\n  companyName     String\n  position        String\n  exameDate       DateTime\n  dedicationHours Int\n  userId          String\n  user            User         @relation(fields: [userId], references: [id], onDelete: Cascade)\n  Discipline      Discipline[]\n\n  @@map(\"contests\")\n}\n\nmodel Discipline {\n  id        String   @id @default(uuid())\n  name      String\n  color     String\n  contestId String\n  contest   Contest  @relation(fields: [contestId], references: [id], onDelete: Cascade)\n  Lesson    Lesson[]\n\n  @@map(\"disciplines\")\n}\n\nmodel Stage {\n  id          String   @id @default(uuid())\n  name        String\n  description String\n  Lesson      Lesson[]\n\n  @@map(\"stages\")\n}\n\nmodel Lesson {\n  id           String     @id @default(uuid())\n  numberLesson Int\n  disciplineId String\n  stageId      String\n  stage        Stage      @relation(fields: [stageId], references: [id], onDelete: Cascade)\n  discipline   Discipline @relation(fields: [disciplineId], references: [id], onDelete: Cascade)\n  Topic        Topic[]\n  Content      Content[]\n\n  @@map(\"lessons\")\n}\n\nmodel Topic {\n  id       String @id @default(uuid())\n  name     String\n  lessonId String\n  lesson   Lesson @relation(fields: [lessonId], references: [id], onDelete: Cascade)\n\n  @@map(\"topics\")\n}\n\nmodel ContentType {\n  id      String    @id @default(uuid())\n  name    String\n  Content Content[]\n\n  @@map(\"content_types\")\n}\n\nmodel Content {\n  id              String      @id @default(uuid())\n  numberContent   Int\n  durationSeconds Int\n  lessonId        String\n  contentTypeId   String\n  lesson          Lesson      @relation(fields: [lessonId], references: [id], onDelete: Cascade)\n  contentType     ContentType @relation(fields: [contentTypeId], references: [id], onDelete: Cascade)\n  Register        Register[]\n\n  @@map(\"contents\")\n}\n\nmodel Register {\n  id           String   @id @default(uuid())\n  contentId    String\n  registeredAt DateTime @default(now())\n  content      Content  @relation(fields: [contentId], references: [id], onDelete: Cascade)\n\n  @@map(\"registers\")\n}\n",
-  "inlineSchemaHash": "1467a85a804afe1b7c82a1fa20873015bff4b95bbc3972c87cdd83eec0ecf42a",
+  "inlineSchema": "// This is your Prisma schema file,\n// learn more about it in the docs: https://pris.ly/d/prisma-schema\n\n// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?\n// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init\n\ngenerator client {\n  provider      = \"prisma-client-js\"\n  binaryTargets = [\"native\", \"rhel-openssl-3.0.x\"]\n  output        = \"../generated/prisma\"\n}\n\ndatasource db {\n  provider = \"postgresql\"\n  url      = env(\"POSTGRES_PRISMA_URL\")\n}\n\nmodel User {\n  id        String    @id @default(uuid())\n  name      String\n  email     String    @unique\n  password  String\n  createdAt DateTime  @default(now())\n  updatedAt DateTime  @updatedAt\n  Contest   Contest[]\n\n  @@map(\"users\")\n}\n\nmodel Contest {\n  id              String       @id @default(uuid())\n  companyName     String\n  position        String\n  exameDate       DateTime\n  dedicationHours Int\n  userId          String\n  user            User         @relation(fields: [userId], references: [id], onDelete: Cascade)\n  Discipline      Discipline[]\n\n  @@map(\"contests\")\n}\n\nmodel Discipline {\n  id        String   @id @default(uuid())\n  name      String\n  color     String\n  contestId String\n  contest   Contest  @relation(fields: [contestId], references: [id], onDelete: Cascade)\n  Lesson    Lesson[]\n\n  @@map(\"disciplines\")\n}\n\nmodel Stage {\n  id          String   @id @default(uuid())\n  name        String\n  description String\n  Lesson      Lesson[]\n\n  @@map(\"stages\")\n}\n\nmodel Lesson {\n  id           String     @id @default(uuid())\n  numberLesson Int\n  disciplineId String\n  stageId      String\n  stage        Stage      @relation(fields: [stageId], references: [id], onDelete: Cascade)\n  discipline   Discipline @relation(fields: [disciplineId], references: [id], onDelete: Cascade)\n  Topic        Topic[]\n  Content      Content[]\n\n  @@map(\"lessons\")\n}\n\nmodel Topic {\n  id       String @id @default(uuid())\n  name     String\n  lessonId String\n  lesson   Lesson @relation(fields: [lessonId], references: [id], onDelete: Cascade)\n\n  @@map(\"topics\")\n}\n\nmodel ContentType {\n  id      String    @id @default(uuid())\n  name    String\n  Content Content[]\n\n  @@map(\"content_types\")\n}\n\nmodel Content {\n  id              String      @id @default(uuid())\n  numberContent   Int\n  durationSeconds Int\n  lessonId        String\n  contentTypeId   String\n  lesson          Lesson      @relation(fields: [lessonId], references: [id], onDelete: Cascade)\n  contentType     ContentType @relation(fields: [contentTypeId], references: [id], onDelete: Cascade)\n  Register        Register[]\n\n  @@map(\"contents\")\n}\n\nmodel Register {\n  id           String   @id @default(uuid())\n  contentId    String\n  registeredAt DateTime @default(now())\n  content      Content  @relation(fields: [contentId], references: [id], onDelete: Cascade)\n\n  @@map(\"registers\")\n}\n",
+  "inlineSchemaHash": "d66f49741602ff53651f012e7fc7e9801de7eb62eadebe79ae8acc47afa5a114",
   "copyEngine": true
 }
 
@@ -268,6 +272,10 @@ Object.assign(exports, Prisma)
 // file annotations for bundling tools to include these files
 path.join(__dirname, "libquery_engine-darwin-arm64.dylib.node");
 path.join(process.cwd(), "generated/prisma/libquery_engine-darwin-arm64.dylib.node")
+
+// file annotations for bundling tools to include these files
+path.join(__dirname, "libquery_engine-rhel-openssl-3.0.x.so.node");
+path.join(process.cwd(), "generated/prisma/libquery_engine-rhel-openssl-3.0.x.so.node")
 // file annotations for bundling tools to include these files
 path.join(__dirname, "schema.prisma");
 path.join(process.cwd(), "generated/prisma/schema.prisma")

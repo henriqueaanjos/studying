@@ -12,11 +12,14 @@ import {
     SidebarMenuItem,
     useSidebar,
 } from './ui/sidebar'
-import { Calendar, Home, LandPlot, LibraryBig, ListChecks, Notebook } from "lucide-react"
+import { Home, LibraryBig, ListChecks, LogOut, Notebook } from "lucide-react"
 import { ModeToggle } from "./ToggleMode";
 import { Logo } from "./Logo";
 import Link from 'next/link';
 import { Tooltip, TooltipContent, TooltipTrigger } from './ui/tooltip';
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from './ui/dropdown-menu';
+import Image from 'next/image';
+import { useAuth } from '@/hooks/useAuth';
 
 const items = [
     {
@@ -39,20 +42,31 @@ const items = [
         url: "Monitoring",
         icon: LibraryBig,
     },
-    {
-        title: "Calendário",
-        url: "#",
-        icon: Calendar,
-    },
-    {
-        title: "Planejamento",
-        url: "Planner",
-        icon: LandPlot,
-    },
+    // {
+    //     title: "Calendário",
+    //     url: "#",
+    //     icon: Calendar,
+    // },
+    // {
+    //     title: "Planejamento",
+    //     url: "Planner",
+    //     icon: LandPlot,
+    // },
 ]
 
 export function AppSidebar() {
     const { open } = useSidebar();
+
+     const { user, signOut } = useAuth();
+
+    async function handleSignOut() {
+        try {
+            await signOut();
+        } catch (error) {
+            console.error('Error signing out: ', error);
+        }
+    }
+
     return (
         <Sidebar collapsible="icon" >
             <SidebarHeader>
@@ -83,8 +97,29 @@ export function AppSidebar() {
                     </SidebarGroupContent>
                 </SidebarGroup>
             </SidebarContent>
-            <SidebarFooter >
-                <ModeToggle/>
+            <SidebarFooter className='flex flex-col items-center mb-4'>
+                <ModeToggle isSideBarOpen={open}/>
+                <DropdownMenu>
+                    <DropdownMenuTrigger asChild>
+                        <div className="flex flex-row items-center gap-2 cursor-pointer">
+                            <Image
+                                src={`https://ui-avatars.com/api/?background=random&name=${encodeURIComponent(user.name)}&text=random`}
+                                alt="Avatar"
+                                width={40}
+                                height={40}
+                                className="rounded-full border"
+                                unoptimized
+                            />
+                            {open && <h1 className="font-black text-sm whitespace-nowrap text-white">{user.name}</h1>}
+                        </div>
+                    </DropdownMenuTrigger>
+                    <DropdownMenuContent align="end">
+                        <DropdownMenuItem onSelect={handleSignOut}>
+                            <LogOut size={16} className="mr-2" />
+                            Sair
+                        </DropdownMenuItem>
+                    </DropdownMenuContent>
+                </DropdownMenu>
             </SidebarFooter>
         </Sidebar>
     )

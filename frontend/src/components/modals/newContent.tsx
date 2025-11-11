@@ -16,6 +16,7 @@ import { createContent } from "@/services/content.request";
 import { queryClient } from "@/lib/react-query";
 import { toast } from "sonner";
 import { useEffect } from "react";
+import { useContest } from "@/hooks/useContest";
 
 
 type DialogProps = {
@@ -45,6 +46,8 @@ export function NewContentModal({ isOpen, onClose }: DialogProps) {
     const { control, handleSubmit, formState: { errors }, watch, reset } = useForm({
         resolver: yupResolver(contentSchema)
     })
+
+    const { contest } = useContest();
 
 
     function formatDuration(value: string) {
@@ -101,11 +104,13 @@ export function NewContentModal({ isOpen, onClose }: DialogProps) {
 
     const { data: disciplines } = useQuery({
         queryKey: ['disciplines'],
+        enabled: !!contest?.id, 
         queryFn: getAllDiscipline,
     })
 
     const { data: lessons } = useQuery({
         queryKey: ['lessons'],
+        enabled: !!contest?.id, 
         queryFn: getAllLesson,
     })
 
