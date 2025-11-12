@@ -21,6 +21,10 @@ let ContentController = class ContentController {
     constructor(contentService) {
         this.contentService = contentService;
     }
+    createContents(data) {
+        console.log(data);
+        return this.contentService.createContents(data);
+    }
     create(data) {
         console.log(data);
         return this.contentService.create(data);
@@ -39,6 +43,14 @@ let ContentController = class ContentController {
     }
 };
 exports.ContentController = ContentController;
+__decorate([
+    (0, common_1.UseGuards)(auth_guard_1.AuthGuard),
+    (0, common_1.Post)('/mores'),
+    __param(0, (0, common_1.Body)()),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Array]),
+    __metadata("design:returntype", void 0)
+], ContentController.prototype, "createContents", null);
 __decorate([
     (0, common_1.UseGuards)(auth_guard_1.AuthGuard),
     (0, common_1.Post)(),

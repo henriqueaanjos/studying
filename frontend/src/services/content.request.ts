@@ -6,6 +6,10 @@ export async function createContent(content: contentDTO){
     const response = await api.post<contentDTO>('/content', content);
     return response.data;
 }
+export async function createContents(contents: contentDTO[]){
+    const response = await api.post<contentDTO[]>('/content/mores', contents);
+    return response.data;
+}
 
 export async function getContentById(id: string){
     const response  = await api.get<contentDTO>(`/content/${id}`);

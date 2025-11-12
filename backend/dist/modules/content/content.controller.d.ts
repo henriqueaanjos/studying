@@ -3,6 +3,7 @@ import { ContentDTO } from './content.dto';
 export declare class ContentController {
     private readonly contentService;
     constructor(contentService: ContentService);
+    createContents(data: ContentDTO[]): Promise<ContentDTO[]>;
     create(data: ContentDTO): Promise<{
         id: string;
         numberContent: number;

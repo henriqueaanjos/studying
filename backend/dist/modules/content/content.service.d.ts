@@ -3,6 +3,7 @@ import { PrismaService } from '../../database/PrismaService';
 export declare class ContentService {
     private prisma;
     constructor(prisma: PrismaService);
+    createContents(data: ContentDTO[]): Promise<ContentDTO[]>;
     create(data: ContentDTO): Promise<{
         id: string;
         numberContent: number;

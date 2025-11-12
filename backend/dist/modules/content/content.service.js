@@ -12,11 +12,34 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.ContentService = void 0;
 const common_1 = require("@nestjs/common");
 const PrismaService_1 = require("../../database/PrismaService");
-;
 let ContentService = class ContentService {
     prisma;
     constructor(prisma) {
         this.prisma = prisma;
+    }
+    async createContents(data) {
+        const createdContents = [];
+        for (const contentData of data) {
+            const contentExists = await this.prisma.content.findFirst({
+                where: {
+                    numberContent: contentData.numberContent,
+                    lessonId: contentData.lessonId,
+                },
+            });
+            if (contentExists) {
+                throw new common_1.BadRequestException(`Content already exists: Lesson ID ${contentData.lessonId}, Number Content ${contentData.numberContent}`);
+            }
+            const content = await this.prisma.content.create({
+                data: {
+                    numberContent: contentData.numberContent,
+                    durationSeconds: contentData.durationSeconds,
+                    lessonId: contentData.lessonId,
+                    contentTypeId: contentData.contentTypeId,
+                },
+            });
+            createdContents.push(content);
+        }
+        return createdContents;
     }
     async create(data) {
         const contentExists = await this.prisma.content.findFirst({

@@ -1,304 +1,125 @@
-[00:00:01.787] Server  LOG      ✓ Ready in 1428ms
-[00:00:05.165] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:06.977] Server  ERROR    ⨯ The requested resource "https://ui-avatars.com/api/?background=random&name=undefined" has type "image/svg+xml" but dangerouslyAllowSVG is disabled. Consider adding the "unoptimized" property to the <Image>.
-[00:00:25.771] Server  LOG      ✓ Compiled in 97ms
-[00:00:43.534] Server  LOG      ✓ Compiled in 94ms
-[00:00:53.187] Server  LOG      ✓ Compiled in 75ms
-[00:01:03.864] Server  LOG      ✓ Compiled in 57ms
-[00:01:10.513] Server  LOG      ✓ Compiled in 96ms
-[00:01:36.275] Server  LOG      ✓ Compiled in 71ms
-[00:01:54.990] Server  LOG      ✓ Compiled in 86ms
-[00:02:01.392] Server  LOG      ✓ Compiled in 90ms
-[00:02:07.476] Server  LOG      ✓ Compiled in 60ms
-[00:03:13.384] Server  LOG      ✓ Compiled in 60ms
-[00:03:53.741] Server  LOG      ✓ Compiled in 183ms
-[00:05:21.452] Server  LOG      ✓ Compiled in 75ms
-[00:06:11.586] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./src/context/AuthContext.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
-[00:06:12.461] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:06:12.595] Server  ERROR    ⨯ The requested resource "https://ui-avatars.com/api/?background=random&name=undefined" has type "image/svg+xml" but dangerouslyAllowSVG is disabled. Consider adding the "unoptimized" property to the <Image>.
-[00:06:12.796] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-%s%s https://react.dev/link/hydration-mismatch 
-
-  ...
-    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
-      <AppDevOverlayErrorBoundary globalError={[...]}>
-        <ReplaySsrOnlyErrors>
-        <DevRootHTTPAccessFallbackBoundary>
-          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/Home" notFound={<NotAllowedRootHTTPFallbackError>} ...>
-              <RedirectBoundary>
-                <RedirectErrorBoundary router={{...}}>
-                  <Head>
-                  <__next_root_layout_boundary__>
-                    <SegmentViewNode type="layout" pagePath="layout.tsx">
-                      <SegmentTrieNode>
-                      <link>
-                      <script>
-                      <script>
-                      <script>
-                      <RootLayout>
-                        <html lang="en" suppressHydrationWarning={true}>
-                          <body
-                            className="roboto_7197f6d-module__A0KAba__className antialiased w-screen"
--                           data-new-gr-c-s-check-loaded="14.1261.0"
--                           data-gr-ext-installed=""
-                          >
-                  ...
-
-[00:06:16.521] Server  ERROR    ⨯ The requested resource "https://ui-avatars.com/api/?background=random&name=undefined" has type "image/svg+xml" but dangerouslyAllowSVG is disabled. Consider adding the "unoptimized" property to the <Image>.
-[00:06:26.854] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:07:02.966] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./src/context/AuthContext.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
-[00:07:02.972] Server  LOG      ✓ Compiled in 82ms
-[00:07:03.632] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:07:03.807] Server  ERROR    ⨯ The requested resource "https://ui-avatars.com/api/?background=random&name=undefined" has type "image/svg+xml" but dangerouslyAllowSVG is disabled. Consider adding the "unoptimized" property to the <Image>.
-[00:07:06.335] Server  ERROR    ⨯ The requested resource "https://ui-avatars.com/api/?background=random&name=undefined" has type "image/svg+xml" but dangerouslyAllowSVG is disabled. Consider adding the "unoptimized" property to the <Image>.
-[00:08:20.412] Server  LOG      ✓ Compiled in 137ms
-[00:09:10.001] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./src/context/AuthContext.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
-[00:09:10.237] Server  LOG      ✓ Compiled in 464ms
-[00:09:10.656] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:10:24.490] Server  LOG      ✓ Compiled in 101ms
-[00:10:27.618] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:10:48.589] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:11:13.886] Server  LOG      ✓ Compiled in 38ms
-[00:11:18.522] Server  LOG      ✓ Compiled in 298ms
-[00:11:18.771] Server  LOG      ✓ Compiled in 0ms
-[00:11:18.932] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:12:54.948] Server  LOG      ✓ Compiled in 186ms
-[00:13:07.450] Browser ERROR   Error signing out:  {}
-[00:13:34.610] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./src/context/AuthContext.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
-[00:13:34.640] Server  LOG      ✓ Compiled in 98ms
-[00:13:35.422] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:14:23.439] Server  LOG      ✓ Compiled in 148ms
-[00:14:36.512] Browser ERROR   Erro ao fazer login: {}
-[00:14:36.512] Browser ERROR   unhandledRejection: Error: Usuário ou senha inválidos: 
-[00:16:52.565] Server  LOG      ✓ Compiled in 173ms
-[00:17:03.249] Browser ERROR   {}
-[00:17:03.249] Browser ERROR   unhandledRejection: Error: Usuário ou senha inválidos: 
-[00:17:08.806] Browser ERROR   {}
-[00:17:08.807] Browser ERROR   unhandledRejection: Error: Usuário ou senha inválidos: 
-[00:18:37.472] Server  LOG      ✓ Compiled in 175ms
-[00:18:41.187] Browser ERROR   {}
-[00:18:41.187] Browser ERROR   unhandledRejection: Error: Usuário ou senha inválidos: 
-[00:18:56.618] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./src/context/AuthContext.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
-[00:18:56.640] Server  LOG      ✓ Compiled in 56ms
-[00:18:57.688] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:19:01.243] Server  LOG      ✓ Compiled in 51ms
-[00:19:37.159] Server  LOG      ✓ Compiled in 99ms
-[00:21:20.219] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./src/context/AuthContext.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
-[00:21:20.235] Server  LOG      ✓ Compiled in 75ms
-[00:21:21.240] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:21:21.555] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-%s%s https://react.dev/link/hydration-mismatch 
-
-  ...
-    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
-      <AppDevOverlayErrorBoundary globalError={[...]}>
-        <ReplaySsrOnlyErrors>
-        <DevRootHTTPAccessFallbackBoundary>
-          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/SignUp" notFound={<NotAllowedRootHTTPFallbackError>} ...>
-              <RedirectBoundary>
-                <RedirectErrorBoundary router={{...}}>
-                  <Head>
-                  <__next_root_layout_boundary__>
-                    <SegmentViewNode type="layout" pagePath="layout.tsx">
-                      <SegmentTrieNode>
-                      <link>
-                      <script>
-                      <script>
-                      <script>
-                      <RootLayout>
-                        <html lang="en" suppressHydrationWarning={true}>
-                          <body
-                            className="roboto_7197f6d-module__A0KAba__className antialiased w-screen"
--                           data-new-gr-c-s-check-loaded="14.1261.0"
--                           data-gr-ext-installed=""
-                          >
-                  ...
-
-[00:22:30.897] Server  LOG      ✓ Compiled in 198ms
-[00:22:56.326] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:23:14.261] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:23:14.666] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-%s%s https://react.dev/link/hydration-mismatch 
-
-  ...
-    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
-      <AppDevOverlayErrorBoundary globalError={[...]}>
-        <ReplaySsrOnlyErrors>
-        <DevRootHTTPAccessFallbackBoundary>
-          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/Home" notFound={<NotAllowedRootHTTPFallbackError>} ...>
-              <RedirectBoundary>
-                <RedirectErrorBoundary router={{...}}>
-                  <Head>
-                  <__next_root_layout_boundary__>
-                    <SegmentViewNode type="layout" pagePath="layout.tsx">
-                      <SegmentTrieNode>
-                      <link>
-                      <script>
-                      <script>
-                      <script>
-                      <RootLayout>
-                        <html lang="en" suppressHydrationWarning={true}>
-                          <body
-                            className="roboto_7197f6d-module__A0KAba__className antialiased w-screen"
--                           data-new-gr-c-s-check-loaded="14.1261.0"
--                           data-gr-ext-installed=""
-                          >
-                  ...
-
-[00:24:54.737] Browser ERROR   Received NaN for the `%s` attribute. If this is expected, cast the value to a string. children
-[00:25:34.534] Server  LOG      ✓ Compiled in 74ms
-[00:26:20.839] Server  LOG      ✓ Compiled in 83ms
-[00:26:34.918] Server  LOG      ✓ Compiled in 54ms
-[00:27:19.404] Browser LOG     []
-[00:27:25.144] Browser LOG     []
-[00:27:29.100] Browser LOG     []
-[00:27:36.614] Server  LOG      ✓ Compiled in 123ms
-[00:27:48.922] Server  LOG      ✓ Compiled in 86ms
-[00:27:53.186] Server  LOG      ✓ Compiled in 68ms
-[00:28:26.246] Server  LOG      ✓ Compiled in 50ms
-[00:28:36.150] Browser LOG     []
-[00:28:37.525] Browser LOG     []
-[00:29:21.342] Browser LOG     []
-[00:32:09.526] Browser LOG     []
-[00:32:12.999] Browser LOG     []
-[00:33:42.690] Server  LOG      ✓ Compiled in 208ms
-[00:33:42.910] Browser LOG     []
-[00:33:53.087] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:33:53.653] Browser ERROR   Received NaN for the `%s` attribute. If this is expected, cast the value to a string. children
-[00:33:53.653] Browser LOG     []
-[00:34:19.133] Server  LOG      ✓ Compiled in 54ms
-[00:34:32.419] Server  LOG      ✓ Compiled in 60ms
-[00:34:48.185] Server  LOG      ✓ Compiled in 52ms
-[00:35:02.596] Server  LOG      ✓ Compiled in 46ms
-[00:35:28.616] Server  LOG      ✓ Compiled in 60ms
-[00:35:34.760] Server  LOG      ✓ Compiled in 49ms
-[00:36:06.492] Browser LOG     []
-[00:36:16.286] Server  LOG      ✓ Compiled in 98ms
-[00:36:19.446] Server  LOG      ✓ Compiled in 63ms
-[00:37:02.388] Server  LOG      ✓ Compiled in 65ms
-[00:37:11.947] Server  LOG      ✓ Compiled in 62ms
-[00:37:24.789] Server  LOG      ✓ Compiled in 51ms
-[00:37:34.712] Server  LOG      ✓ Compiled in 51ms
-[00:37:40.228] Server  LOG      ✓ Compiled in 46ms
-[00:37:54.009] Server  LOG      ✓ Compiled in 48ms
-[00:38:39.881] Server  LOG      ✓ Compiled in 50ms
-[00:40:14.687] Server  LOG      ✓ Compiled in 63ms
-[00:40:16.242] Server  LOG      ✓ Compiled in 63ms
-[00:40:59.171] Server  LOG      ✓ Compiled in 41ms
-[00:41:34.670] Server  LOG      ✓ Compiled in 79ms
-[00:43:08.458] Server  LOG      ✓ Compiled in 92ms
-[00:43:08.695] Browser LOG     []
-[00:43:14.264] Server  LOG      ✓ Compiled in 65ms
-[00:43:14.387] Browser LOG     []
-[00:43:23.463] Server  LOG      ✓ Compiled in 64ms
-[00:43:23.583] Browser LOG     []
-[00:43:29.830] Server  LOG      ✓ Compiled in 60ms
-[00:43:29.963] Browser LOG     []
-[00:43:49.193] Server  LOG      ✓ Compiled in 48ms
-[00:43:49.326] Browser LOG     []
-[00:43:59.162] Server  LOG      ✓ Compiled in 76ms
-[00:43:59.287] Browser LOG     []
-[00:44:06.530] Server  LOG      ✓ Compiled in 68ms
-[00:44:06.665] Browser LOG     []
-[00:44:53.189] Server  LOG      ✓ Compiled in 57ms
-[00:44:53.339] Browser LOG     []
-[00:45:07.064] Browser LOG     []
-[00:47:10.037] Server  LOG      ✓ Compiled in 163ms
-[00:47:25.628] Server  LOG      ✓ Compiled in 54ms
-[00:47:48.123] Browser LOG     []
-[00:48:03.773] Browser LOG     []
-[00:49:55.356] Server  LOG      ✓ Compiled in 146ms
-[00:49:55.617] Browser LOG     []
-[00:50:15.806] Server  LOG      ✓ Compiled in 71ms
-[00:50:15.971] Browser LOG     []
-[00:50:53.833] Server  LOG      ✓ Compiled in 62ms
-[00:50:54.019] Browser LOG     []
-[00:51:13.886] Server  LOG      ✓ Compiled in 0ms
-[00:51:14.687] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:51:15.008] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-%s%s https://react.dev/link/hydration-mismatch 
-
-  ...
-    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
-      <AppDevOverlayErrorBoundary globalError={[...]}>
-        <ReplaySsrOnlyErrors>
-        <DevRootHTTPAccessFallbackBoundary>
-          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/Monitoring" notFound={<NotAllowedRootHTTPFallbackError>} ...>
-              <RedirectBoundary>
-                <RedirectErrorBoundary router={{...}}>
-                  <Head>
-                  <__next_root_layout_boundary__>
-                    <SegmentViewNode type="layout" pagePath="layout.tsx">
-                      <SegmentTrieNode>
-                      <link>
-                      <script>
-                      <script>
-                      <script>
-                      <RootLayout>
-                        <html lang="en" suppressHydrationWarning={true}>
-                          <body
-                            className="roboto_7197f6d-module__A0KAba__className antialiased w-screen"
--                           data-new-gr-c-s-check-loaded="14.1261.0"
--                           data-gr-ext-installed=""
-                          >
-                  ...
-
-[00:51:16.093] Browser LOG     []
-[00:52:22.408] Server  LOG      ✓ Compiled in 64ms
-[00:52:22.623] Browser LOG     []
-[00:52:24.818] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:52:26.319] Browser LOG     []
-[00:52:28.624] Browser LOG     []
-[00:52:30.672] Browser LOG     []
-[00:52:33.383] Browser LOG     []
-[00:52:36.093] Browser LOG     []
-[00:52:38.691] Browser LOG     []
-[00:52:43.550] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:52:44.173] Browser ERROR   Received NaN for the `%s` attribute. If this is expected, cast the value to a string. children
-[00:52:44.173] Browser LOG     []
-[00:54:01.796] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:54:02.396] Browser ERROR   Received NaN for the `%s` attribute. If this is expected, cast the value to a string. children
-[00:54:02.396] Browser LOG     []
-[00:54:05.278] Browser LOG     []
-[00:54:06.689] Browser LOG     []
-[00:54:07.935] Browser LOG     []
+[00:00:01.306] Server  LOG      ✓ Ready in 1024ms
+[00:00:01.336] Browser LOG     []
+[00:00:04.877] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:04.986] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:05.657] Browser ERROR   Received NaN for the `%s` attribute. If this is expected, cast the value to a string. children
+[00:00:05.657] Browser LOG     []
+[00:00:06.659] Browser ERROR   Received NaN for the `%s` attribute. If this is expected, cast the value to a string. children
+[00:00:06.659] Browser LOG     []
+[00:00:09.449] Browser WARN    Select is changing from uncontrolled to controlled. Components should not switch from controlled to uncontrolled (or vice versa). Decide between using a controlled or uncontrolled value for the lifetime of the component.
+[00:00:16.026] Browser WARN    Select is changing from controlled to uncontrolled. Components should not switch from controlled to uncontrolled (or vice versa). Decide between using a controlled or uncontrolled value for the lifetime of the component.
+[00:00:21.076] Browser WARN    RadioGroup is changing from uncontrolled to controlled. Components should not switch from controlled to uncontrolled (or vice versa). Decide between using a controlled or uncontrolled value for the lifetime of the component.
+[00:00:24.624] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'id')
+[00:00:29.287] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:29.559] Browser ERROR   Received NaN for the `%s` attribute. If this is expected, cast the value to a string. children
+[00:00:29.559] Browser LOG     [{"Content":[],"Topic":[{"id":"6440c4c7-5640-45d2-81d6-687c94ead5d2","lessonId":"eebcdc3d-f637-4a61-8dda-3c56c7f8d87a","name":"teste"}],"completedContents":0,"completedDuration":0,"contentTypes":[],"discipline":{"color":"#ff6900","contestId":"a412c461-3ffe-4fae-9eb4-6ad7211907fe","id":"8e8729e2-4860-4853-93bd-e6cab25abbd9","name":"Matemática"},"disciplineId":"8e8729e2-4860-4853-93bd-e6cab25abbd9","id":"eebcdc3d-f637-4a61-8dda-3c56c7f8d87a","numberLesson":0,"stageId":"db926533-ac52-4b16-87fe-bec71c1cff00","topicTitles":["teste"],"totalContents":0,"totalDuration":0}]
+[00:00:33.329] Browser WARN    Select is changing from uncontrolled to controlled. Components should not switch from controlled to uncontrolled (or vice versa). Decide between using a controlled or uncontrolled value for the lifetime of the component.
+[00:00:34.936] Browser WARN    Select is changing from uncontrolled to controlled. Components should not switch from controlled to uncontrolled (or vice versa). Decide between using a controlled or uncontrolled value for the lifetime of the component.
+[00:00:35.793] Browser WARN    RadioGroup is changing from uncontrolled to controlled. Components should not switch from controlled to uncontrolled (or vice versa). Decide between using a controlled or uncontrolled value for the lifetime of the component.
+[00:00:42.264] Browser ERROR   unhandledRejection: TypeError: Cannot read properties of undefined (reading 'toString')
+[00:00:51.074] Browser ERROR   unhandledRejection: TypeError: Cannot read properties of undefined (reading 'toString')
+[00:01:15.758] Browser LOG     [{"Content":[],"Topic":[{"id":"6440c4c7-5640-45d2-81d6-687c94ead5d2","lessonId":"eebcdc3d-f637-4a61-8dda-3c56c7f8d87a","name":"teste"}],"completedContents":0,"completedDuration":0,"contentTypes":[],"discipline":{"color":"#ff6900","contestId":"a412c461-3ffe-4fae-9eb4-6ad7211907fe","id":"8e8729e2-4860-4853-93bd-e6cab25abbd9","name":"Matemática"},"disciplineId":"8e8729e2-4860-4853-93bd-e6cab25abbd9","id":"eebcdc3d-f637-4a61-8dda-3c56c7f8d87a","numberLesson":0,"stageId":"db926533-ac52-4b16-87fe-bec71c1cff00","topicTitles":["teste"],"totalContents":0,"totalDuration":0}]
+[00:01:19.305] Browser LOG     [{"Content":[],"Topic":[{"id":"6440c4c7-5640-45d2-81d6-687c94ead5d2","lessonId":"eebcdc3d-f637-4a61-8dda-3c56c7f8d87a","name":"teste"}],"completedContents":0,"completedDuration":0,"contentTypes":[],"discipline":{"color":"#ff6900","contestId":"a412c461-3ffe-4fae-9eb4-6ad7211907fe","id":"8e8729e2-4860-4853-93bd-e6cab25abbd9","name":"Matemática"},"disciplineId":"8e8729e2-4860-4853-93bd-e6cab25abbd9","id":"eebcdc3d-f637-4a61-8dda-3c56c7f8d87a","numberLesson":0,"stageId":"db926533-ac52-4b16-87fe-bec71c1cff00","topicTitles":["teste"],"totalContents":0,"totalDuration":0}]
+[00:02:13.553] Server  LOG      ✓ Compiled in 150ms
+[00:02:14.657] Browser LOG     [{"Content":[],"Topic":[{"id":"6440c4c7-5640-45d2-81d6-687c94ead5d2","lessonId":"eebcdc3d-f637-4a61-8dda-3c56c7f8d87a","name":"teste"}],"completedContents":0,"completedDuration":0,"contentTypes":[],"discipline":{"color":"#ff6900","contestId":"a412c461-3ffe-4fae-9eb4-6ad7211907fe","id":"8e8729e2-4860-4853-93bd-e6cab25abbd9","name":"Matemática"},"disciplineId":"8e8729e2-4860-4853-93bd-e6cab25abbd9","id":"eebcdc3d-f637-4a61-8dda-3c56c7f8d87a","numberLesson":0,"stageId":"db926533-ac52-4b16-87fe-bec71c1cff00","topicTitles":["teste"],"totalContents":0,"totalDuration":0}]
+[00:02:14.658] Browser WARN    Select is changing from controlled to uncontrolled. Components should not switch from controlled to uncontrolled (or vice versa). Decide between using a controlled or uncontrolled value for the lifetime of the component.
+[00:02:14.658] Browser WARN    Select is changing from controlled to uncontrolled. Components should not switch from controlled to uncontrolled (or vice versa). Decide between using a controlled or uncontrolled value for the lifetime of the component.
+[00:02:14.658] Browser WARN    RadioGroup is changing from controlled to uncontrolled. Components should not switch from controlled to uncontrolled (or vice versa). Decide between using a controlled or uncontrolled value for the lifetime of the component.
+[00:02:14.658] Browser LOG     [{"Content":[],"Topic":[{"id":"6440c4c7-5640-45d2-81d6-687c94ead5d2","lessonId":"eebcdc3d-f637-4a61-8dda-3c56c7f8d87a","name":"teste"}],"completedContents":0,"completedDuration":0,"contentTypes":[],"discipline":{"color":"#ff6900","contestId":"a412c461-3ffe-4fae-9eb4-6ad7211907fe","id":"8e8729e2-4860-4853-93bd-e6cab25abbd9","name":"Matemática"},"disciplineId":"8e8729e2-4860-4853-93bd-e6cab25abbd9","id":"eebcdc3d-f637-4a61-8dda-3c56c7f8d87a","numberLesson":0,"stageId":"db926533-ac52-4b16-87fe-bec71c1cff00","topicTitles":["teste"],"totalContents":0,"totalDuration":0}]
+[00:05:32.687] Server  LOG      ✓ Compiled in 169ms
+[00:05:33.658] Browser LOG     [{"Content":[],"Topic":[{"id":"6440c4c7-5640-45d2-81d6-687c94ead5d2","lessonId":"eebcdc3d-f637-4a61-8dda-3c56c7f8d87a","name":"teste"}],"completedContents":0,"completedDuration":0,"contentTypes":[],"discipline":{"color":"#ff6900","contestId":"a412c461-3ffe-4fae-9eb4-6ad7211907fe","id":"8e8729e2-4860-4853-93bd-e6cab25abbd9","name":"Matemática"},"disciplineId":"8e8729e2-4860-4853-93bd-e6cab25abbd9","id":"eebcdc3d-f637-4a61-8dda-3c56c7f8d87a","numberLesson":0,"stageId":"db926533-ac52-4b16-87fe-bec71c1cff00","topicTitles":["teste"],"totalContents":0,"totalDuration":0}]
+[00:05:33.659] Browser LOG     [{"Content":[],"Topic":[{"id":"6440c4c7-5640-45d2-81d6-687c94ead5d2","lessonId":"eebcdc3d-f637-4a61-8dda-3c56c7f8d87a","name":"teste"}],"completedContents":0,"completedDuration":0,"contentTypes":[],"discipline":{"color":"#ff6900","contestId":"a412c461-3ffe-4fae-9eb4-6ad7211907fe","id":"8e8729e2-4860-4853-93bd-e6cab25abbd9","name":"Matemática"},"disciplineId":"8e8729e2-4860-4853-93bd-e6cab25abbd9","id":"eebcdc3d-f637-4a61-8dda-3c56c7f8d87a","numberLesson":0,"stageId":"db926533-ac52-4b16-87fe-bec71c1cff00","topicTitles":["teste"],"totalContents":0,"totalDuration":0}]
+[00:09:27.908] Server  LOG      ✓ Compiled in 205ms
+[00:09:28.658] Browser LOG     [{"Content":[],"Topic":[{"id":"6440c4c7-5640-45d2-81d6-687c94ead5d2","lessonId":"eebcdc3d-f637-4a61-8dda-3c56c7f8d87a","name":"teste"}],"completedContents":0,"completedDuration":0,"contentTypes":[],"discipline":{"color":"#ff6900","contestId":"a412c461-3ffe-4fae-9eb4-6ad7211907fe","id":"8e8729e2-4860-4853-93bd-e6cab25abbd9","name":"Matemática"},"disciplineId":"8e8729e2-4860-4853-93bd-e6cab25abbd9","id":"eebcdc3d-f637-4a61-8dda-3c56c7f8d87a","numberLesson":0,"stageId":"db926533-ac52-4b16-87fe-bec71c1cff00","topicTitles":["teste"],"totalContents":0,"totalDuration":0}]
+[00:09:28.659] Browser LOG     [{"Content":[],"Topic":[{"id":"6440c4c7-5640-45d2-81d6-687c94ead5d2","lessonId":"eebcdc3d-f637-4a61-8dda-3c56c7f8d87a","name":"teste"}],"completedContents":0,"completedDuration":0,"contentTypes":[],"discipline":{"color":"#ff6900","contestId":"a412c461-3ffe-4fae-9eb4-6ad7211907fe","id":"8e8729e2-4860-4853-93bd-e6cab25abbd9","name":"Matemática"},"disciplineId":"8e8729e2-4860-4853-93bd-e6cab25abbd9","id":"eebcdc3d-f637-4a61-8dda-3c56c7f8d87a","numberLesson":0,"stageId":"db926533-ac52-4b16-87fe-bec71c1cff00","topicTitles":["teste"],"totalContents":0,"totalDuration":0}]
+[00:15:17.665] Server  LOG      ✓ Compiled in 133ms
+[00:45:02.135] Server  LOG      ✓ Compiled in 195ms
+[00:45:02.658] Browser LOG     [{"Content":[],"Topic":[{"id":"6440c4c7-5640-45d2-81d6-687c94ead5d2","lessonId":"eebcdc3d-f637-4a61-8dda-3c56c7f8d87a","name":"teste"}],"completedContents":0,"completedDuration":0,"contentTypes":[],"discipline":{"color":"#ff6900","contestId":"a412c461-3ffe-4fae-9eb4-6ad7211907fe","id":"8e8729e2-4860-4853-93bd-e6cab25abbd9","name":"Matemática"},"disciplineId":"8e8729e2-4860-4853-93bd-e6cab25abbd9","id":"eebcdc3d-f637-4a61-8dda-3c56c7f8d87a","numberLesson":0,"stageId":"db926533-ac52-4b16-87fe-bec71c1cff00","topicTitles":["teste"],"totalContents":0,"totalDuration":0}]
+[00:45:02.658] Browser LOG     [{"Content":[],"Topic":[{"id":"6440c4c7-5640-45d2-81d6-687c94ead5d2","lessonId":"eebcdc3d-f637-4a61-8dda-3c56c7f8d87a","name":"teste"}],"completedContents":0,"completedDuration":0,"contentTypes":[],"discipline":{"color":"#ff6900","contestId":"a412c461-3ffe-4fae-9eb4-6ad7211907fe","id":"8e8729e2-4860-4853-93bd-e6cab25abbd9","name":"Matemática"},"disciplineId":"8e8729e2-4860-4853-93bd-e6cab25abbd9","id":"eebcdc3d-f637-4a61-8dda-3c56c7f8d87a","numberLesson":0,"stageId":"db926533-ac52-4b16-87fe-bec71c1cff00","topicTitles":["teste"],"totalContents":0,"totalDuration":0}]
+[00:45:54.945] Browser LOG     [{"Content":[],"Topic":[{"id":"6440c4c7-5640-45d2-81d6-687c94ead5d2","lessonId":"eebcdc3d-f637-4a61-8dda-3c56c7f8d87a","name":"teste"}],"completedContents":0,"completedDuration":0,"contentTypes":[],"discipline":{"color":"#ff6900","contestId":"a412c461-3ffe-4fae-9eb4-6ad7211907fe","id":"8e8729e2-4860-4853-93bd-e6cab25abbd9","name":"Matemática"},"disciplineId":"8e8729e2-4860-4853-93bd-e6cab25abbd9","id":"eebcdc3d-f637-4a61-8dda-3c56c7f8d87a","numberLesson":0,"stageId":"db926533-ac52-4b16-87fe-bec71c1cff00","topicTitles":["teste"],"totalContents":0,"totalDuration":0}]
+[00:45:59.974] Browser WARN    Select is changing from uncontrolled to controlled. Components should not switch from controlled to uncontrolled (or vice versa). Decide between using a controlled or uncontrolled value for the lifetime of the component.
+[00:46:02.492] Browser WARN    Select is changing from uncontrolled to controlled. Components should not switch from controlled to uncontrolled (or vice versa). Decide between using a controlled or uncontrolled value for the lifetime of the component.
+[00:46:03.672] Browser WARN    RadioGroup is changing from uncontrolled to controlled. Components should not switch from controlled to uncontrolled (or vice versa). Decide between using a controlled or uncontrolled value for the lifetime of the component.
+[00:46:10.855] Browser ERROR   Erro ao criar aula: {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:3333","data":"[{\"numberContent\":0,\"durationSeconds\":null,\"lessonId\":\"eebcdc3d-f637-4a61-8dda-3c56c7f8d87a\",\"contentTypeId\":\"29a98167-eb71-4ce6-867d-6a58ec93fd33\"}]","env":{},"headers":{"Accept":"application/json, text/plain, */*","Content-Type":"application/json","authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOnsiaWQiOiIzYmU5ZWUwMi01N2FiLTQ5Y2YtYjIwNS1jMWQwMGM1ZTAxYjciLCJuYW1lIjoiSGVucmlxdWUgQW5qb3MiLCJlbWFpbCI6ImhlbnJpcXVlLmFhMDFAZ21haWwuY29tIn0sImlhdCI6MTc2Mjk3Njk3NSwiZXhwIjoxNzYzMDYzMzc1fQ.gqv3_-KNPw2nWQbEVRydJcV05WGGiVpF_k8s3eNhwS8"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/contents","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 404","name":"AxiosError","stack":"AxiosError: Request failed with status code 404\n    at settle (http://localhost:3000/_next/static/chunks/node_modules__pnpm_3e5edff9._.js:4008:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules__pnpm_3e5edff9._.js:4523:225)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules__pnpm_3e5edff9._.js:5327:49)\n    at async createContents (http://localhost:3000/_next/static/chunks/src_c288791d._.js?id=%255Bproject%255D%252Fsrc%252Fservices%252Fcontent.request.ts+%255Bapp-client%255D+%2528ecmascript%2529:25:22)\n    at async NewContentModal.useMutation [as mutationFn] (http://localhost:3000/_next/static/chunks/src_c288791d._.js?id=%255Bproject%255D%252Fsrc%252Fcomponents%252Fmodals%252FnewContent.tsx+%255Bapp-client%255D+%2528ecmascript%2529:165:17)","status":404}
+[00:46:10.855] Browser ERROR   unhandledRejection: AxiosError: Request failed with status code 404
+[00:48:28.659] Browser LOG     [{"Content":[],"Topic":[{"id":"6440c4c7-5640-45d2-81d6-687c94ead5d2","lessonId":"eebcdc3d-f637-4a61-8dda-3c56c7f8d87a","name":"teste"}],"completedContents":0,"completedDuration":0,"contentTypes":[],"discipline":{"color":"#ff6900","contestId":"a412c461-3ffe-4fae-9eb4-6ad7211907fe","id":"8e8729e2-4860-4853-93bd-e6cab25abbd9","name":"Matemática"},"disciplineId":"8e8729e2-4860-4853-93bd-e6cab25abbd9","id":"eebcdc3d-f637-4a61-8dda-3c56c7f8d87a","numberLesson":0,"stageId":"db926533-ac52-4b16-87fe-bec71c1cff00","topicTitles":["teste"],"totalContents":0,"totalDuration":0}]
+[00:50:27.679] Server  LOG      ✓ Compiled in 157ms
+[00:50:28.312] Browser WARN    Select is changing from controlled to uncontrolled. Components should not switch from controlled to uncontrolled (or vice versa). Decide between using a controlled or uncontrolled value for the lifetime of the component.
+[00:50:28.313] Browser WARN    Select is changing from controlled to uncontrolled. Components should not switch from controlled to uncontrolled (or vice versa). Decide between using a controlled or uncontrolled value for the lifetime of the component.
+[00:50:28.313] Browser WARN    RadioGroup is changing from controlled to uncontrolled. Components should not switch from controlled to uncontrolled (or vice versa). Decide between using a controlled or uncontrolled value for the lifetime of the component.
+[00:50:28.313] Browser LOG     [{"Content":[],"Topic":[{"id":"6440c4c7-5640-45d2-81d6-687c94ead5d2","lessonId":"eebcdc3d-f637-4a61-8dda-3c56c7f8d87a","name":"teste"}],"completedContents":0,"completedDuration":0,"contentTypes":[],"discipline":{"color":"#ff6900","contestId":"a412c461-3ffe-4fae-9eb4-6ad7211907fe","id":"8e8729e2-4860-4853-93bd-e6cab25abbd9","name":"Matemática"},"disciplineId":"8e8729e2-4860-4853-93bd-e6cab25abbd9","id":"eebcdc3d-f637-4a61-8dda-3c56c7f8d87a","numberLesson":0,"stageId":"db926533-ac52-4b16-87fe-bec71c1cff00","topicTitles":["teste"],"totalContents":0,"totalDuration":0}]
+[00:50:28.442] Browser LOG     [{"Content":[],"Topic":[{"id":"6440c4c7-5640-45d2-81d6-687c94ead5d2","lessonId":"eebcdc3d-f637-4a61-8dda-3c56c7f8d87a","name":"teste"}],"completedContents":0,"completedDuration":0,"contentTypes":[],"discipline":{"color":"#ff6900","contestId":"a412c461-3ffe-4fae-9eb4-6ad7211907fe","id":"8e8729e2-4860-4853-93bd-e6cab25abbd9","name":"Matemática"},"disciplineId":"8e8729e2-4860-4853-93bd-e6cab25abbd9","id":"eebcdc3d-f637-4a61-8dda-3c56c7f8d87a","numberLesson":0,"stageId":"db926533-ac52-4b16-87fe-bec71c1cff00","topicTitles":["teste"],"totalContents":0,"totalDuration":0}]
+[00:50:28.658] Browser LOG     [{"Content":[],"Topic":[{"id":"6440c4c7-5640-45d2-81d6-687c94ead5d2","lessonId":"eebcdc3d-f637-4a61-8dda-3c56c7f8d87a","name":"teste"}],"completedContents":0,"completedDuration":0,"contentTypes":[],"discipline":{"color":"#ff6900","contestId":"a412c461-3ffe-4fae-9eb4-6ad7211907fe","id":"8e8729e2-4860-4853-93bd-e6cab25abbd9","name":"Matemática"},"disciplineId":"8e8729e2-4860-4853-93bd-e6cab25abbd9","id":"eebcdc3d-f637-4a61-8dda-3c56c7f8d87a","numberLesson":0,"stageId":"db926533-ac52-4b16-87fe-bec71c1cff00","topicTitles":["teste"],"totalContents":0,"totalDuration":0}]
+[00:50:39.891] Browser WARN    Select is changing from uncontrolled to controlled. Components should not switch from controlled to uncontrolled (or vice versa). Decide between using a controlled or uncontrolled value for the lifetime of the component.
+[00:50:41.214] Browser WARN    Select is changing from uncontrolled to controlled. Components should not switch from controlled to uncontrolled (or vice versa). Decide between using a controlled or uncontrolled value for the lifetime of the component.
+[00:50:42.177] Browser WARN    RadioGroup is changing from uncontrolled to controlled. Components should not switch from controlled to uncontrolled (or vice versa). Decide between using a controlled or uncontrolled value for the lifetime of the component.
+[00:51:05.257] Browser WARN    Select is changing from controlled to uncontrolled. Components should not switch from controlled to uncontrolled (or vice versa). Decide between using a controlled or uncontrolled value for the lifetime of the component.
+[00:51:05.257] Browser WARN    Select is changing from controlled to uncontrolled. Components should not switch from controlled to uncontrolled (or vice versa). Decide between using a controlled or uncontrolled value for the lifetime of the component.
+[00:51:05.263] Browser WARN    RadioGroup is changing from controlled to uncontrolled. Components should not switch from controlled to uncontrolled (or vice versa). Decide between using a controlled or uncontrolled value for the lifetime of the component.
+[00:51:12.976] Browser LOG     [{"Content":[],"Topic":[{"id":"6440c4c7-5640-45d2-81d6-687c94ead5d2","lessonId":"eebcdc3d-f637-4a61-8dda-3c56c7f8d87a","name":"teste"}],"completedContents":0,"completedDuration":0,"contentTypes":[],"discipline":{"color":"#ff6900","contestId":"a412c461-3ffe-4fae-9eb4-6ad7211907fe","id":"8e8729e2-4860-4853-93bd-e6cab25abbd9","name":"Matemática"},"disciplineId":"8e8729e2-4860-4853-93bd-e6cab25abbd9","id":"eebcdc3d-f637-4a61-8dda-3c56c7f8d87a","numberLesson":0,"stageId":"db926533-ac52-4b16-87fe-bec71c1cff00","topicTitles":["teste"],"totalContents":0,"totalDuration":0}]
+[00:52:21.217] Browser LOG     [{"Content":[],"Topic":[{"id":"6440c4c7-5640-45d2-81d6-687c94ead5d2","lessonId":"eebcdc3d-f637-4a61-8dda-3c56c7f8d87a","name":"teste"}],"completedContents":0,"completedDuration":0,"contentTypes":[],"discipline":{"color":"#ff6900","contestId":"a412c461-3ffe-4fae-9eb4-6ad7211907fe","id":"8e8729e2-4860-4853-93bd-e6cab25abbd9","name":"Matemática"},"disciplineId":"8e8729e2-4860-4853-93bd-e6cab25abbd9","id":"eebcdc3d-f637-4a61-8dda-3c56c7f8d87a","numberLesson":0,"stageId":"db926533-ac52-4b16-87fe-bec71c1cff00","topicTitles":["teste"],"totalContents":0,"totalDuration":0}]
+[00:52:36.932] Browser LOG     [{"Content":[],"Topic":[{"id":"6440c4c7-5640-45d2-81d6-687c94ead5d2","lessonId":"eebcdc3d-f637-4a61-8dda-3c56c7f8d87a","name":"teste"}],"completedContents":0,"completedDuration":0,"contentTypes":[],"discipline":{"color":"#ff6900","contestId":"a412c461-3ffe-4fae-9eb4-6ad7211907fe","id":"8e8729e2-4860-4853-93bd-e6cab25abbd9","name":"Matemática"},"disciplineId":"8e8729e2-4860-4853-93bd-e6cab25abbd9","id":"eebcdc3d-f637-4a61-8dda-3c56c7f8d87a","numberLesson":0,"stageId":"db926533-ac52-4b16-87fe-bec71c1cff00","topicTitles":["teste"],"totalContents":0,"totalDuration":0}]
+[00:53:43.242] Browser LOG     [{"Content":[],"Topic":[{"id":"6440c4c7-5640-45d2-81d6-687c94ead5d2","lessonId":"eebcdc3d-f637-4a61-8dda-3c56c7f8d87a","name":"teste"}],"completedContents":0,"completedDuration":0,"contentTypes":[],"discipline":{"color":"#ff6900","contestId":"a412c461-3ffe-4fae-9eb4-6ad7211907fe","id":"8e8729e2-4860-4853-93bd-e6cab25abbd9","name":"Matemática"},"disciplineId":"8e8729e2-4860-4853-93bd-e6cab25abbd9","id":"eebcdc3d-f637-4a61-8dda-3c56c7f8d87a","numberLesson":0,"stageId":"db926533-ac52-4b16-87fe-bec71c1cff00","topicTitles":["teste"],"totalContents":0,"totalDuration":0}]
+[00:55:59.480] Browser LOG     [{"Content":[],"Topic":[{"id":"6440c4c7-5640-45d2-81d6-687c94ead5d2","lessonId":"eebcdc3d-f637-4a61-8dda-3c56c7f8d87a","name":"teste"}],"completedContents":0,"completedDuration":0,"contentTypes":[],"discipline":{"color":"#ff6900","contestId":"a412c461-3ffe-4fae-9eb4-6ad7211907fe","id":"8e8729e2-4860-4853-93bd-e6cab25abbd9","name":"Matemática"},"disciplineId":"8e8729e2-4860-4853-93bd-e6cab25abbd9","id":"eebcdc3d-f637-4a61-8dda-3c56c7f8d87a","numberLesson":0,"stageId":"db926533-ac52-4b16-87fe-bec71c1cff00","topicTitles":["teste"],"totalContents":0,"totalDuration":0}]
+[00:56:06.170] Browser WARN    Select is changing from uncontrolled to controlled. Components should not switch from controlled to uncontrolled (or vice versa). Decide between using a controlled or uncontrolled value for the lifetime of the component.
+[00:56:07.774] Browser WARN    Select is changing from uncontrolled to controlled. Components should not switch from controlled to uncontrolled (or vice versa). Decide between using a controlled or uncontrolled value for the lifetime of the component.
+[00:56:08.535] Browser WARN    RadioGroup is changing from uncontrolled to controlled. Components should not switch from controlled to uncontrolled (or vice versa). Decide between using a controlled or uncontrolled value for the lifetime of the component.
+[00:56:10.484] Browser WARN    Select is changing from controlled to uncontrolled. Components should not switch from controlled to uncontrolled (or vice versa). Decide between using a controlled or uncontrolled value for the lifetime of the component.
+[00:56:10.489] Browser WARN    Select is changing from controlled to uncontrolled. Components should not switch from controlled to uncontrolled (or vice versa). Decide between using a controlled or uncontrolled value for the lifetime of the component.
+[00:56:10.489] Browser WARN    RadioGroup is changing from controlled to uncontrolled. Components should not switch from controlled to uncontrolled (or vice versa). Decide between using a controlled or uncontrolled value for the lifetime of the component.
+[00:56:25.052] Server  LOG      ✓ Compiled in 165ms
+[00:56:25.328] Browser LOG     [{"Content":[],"Topic":[{"id":"6440c4c7-5640-45d2-81d6-687c94ead5d2","lessonId":"eebcdc3d-f637-4a61-8dda-3c56c7f8d87a","name":"teste"}],"completedContents":0,"completedDuration":0,"contentTypes":[],"discipline":{"color":"#ff6900","contestId":"a412c461-3ffe-4fae-9eb4-6ad7211907fe","id":"8e8729e2-4860-4853-93bd-e6cab25abbd9","name":"Matemática"},"disciplineId":"8e8729e2-4860-4853-93bd-e6cab25abbd9","id":"eebcdc3d-f637-4a61-8dda-3c56c7f8d87a","numberLesson":0,"stageId":"db926533-ac52-4b16-87fe-bec71c1cff00","topicTitles":["teste"],"totalContents":0,"totalDuration":0}]
+[00:56:25.446] Browser LOG     [{"Content":[],"Topic":[{"id":"6440c4c7-5640-45d2-81d6-687c94ead5d2","lessonId":"eebcdc3d-f637-4a61-8dda-3c56c7f8d87a","name":"teste"}],"completedContents":0,"completedDuration":0,"contentTypes":[],"discipline":{"color":"#ff6900","contestId":"a412c461-3ffe-4fae-9eb4-6ad7211907fe","id":"8e8729e2-4860-4853-93bd-e6cab25abbd9","name":"Matemática"},"disciplineId":"8e8729e2-4860-4853-93bd-e6cab25abbd9","id":"eebcdc3d-f637-4a61-8dda-3c56c7f8d87a","numberLesson":0,"stageId":"db926533-ac52-4b16-87fe-bec71c1cff00","topicTitles":["teste"],"totalContents":0,"totalDuration":0}]
+[00:56:25.660] Browser LOG     [{"Content":[],"Topic":[{"id":"6440c4c7-5640-45d2-81d6-687c94ead5d2","lessonId":"eebcdc3d-f637-4a61-8dda-3c56c7f8d87a","name":"teste"}],"completedContents":0,"completedDuration":0,"contentTypes":[],"discipline":{"color":"#ff6900","contestId":"a412c461-3ffe-4fae-9eb4-6ad7211907fe","id":"8e8729e2-4860-4853-93bd-e6cab25abbd9","name":"Matemática"},"disciplineId":"8e8729e2-4860-4853-93bd-e6cab25abbd9","id":"eebcdc3d-f637-4a61-8dda-3c56c7f8d87a","numberLesson":0,"stageId":"db926533-ac52-4b16-87fe-bec71c1cff00","topicTitles":["teste"],"totalContents":0,"totalDuration":0}]
+[00:56:29.154] Browser WARN    Select is changing from uncontrolled to controlled. Components should not switch from controlled to uncontrolled (or vice versa). Decide between using a controlled or uncontrolled value for the lifetime of the component.
+[00:56:30.593] Browser WARN    Select is changing from uncontrolled to controlled. Components should not switch from controlled to uncontrolled (or vice versa). Decide between using a controlled or uncontrolled value for the lifetime of the component.
+[00:56:31.389] Browser WARN    RadioGroup is changing from uncontrolled to controlled. Components should not switch from controlled to uncontrolled (or vice versa). Decide between using a controlled or uncontrolled value for the lifetime of the component.
+[00:56:41.884] Browser ERROR   Erro ao criar aula: {"code":"ERR_BAD_RESPONSE","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:3333","data":"[{\"numberContent\":0,\"durationSeconds\":null,\"lessonId\":\"eebcdc3d-f637-4a61-8dda-3c56c7f8d87a\",\"contentTypeId\":\"29a98167-eb71-4ce6-867d-6a58ec93fd33\"}]","env":{},"headers":{"Accept":"application/json, text/plain, */*","Content-Type":"application/json","authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOnsiaWQiOiIzYmU5ZWUwMi01N2FiLTQ5Y2YtYjIwNS1jMWQwMGM1ZTAxYjciLCJuYW1lIjoiSGVucmlxdWUgQW5qb3MiLCJlbWFpbCI6ImhlbnJpcXVlLmFhMDFAZ21haWwuY29tIn0sImlhdCI6MTc2Mjk3Njk3NSwiZXhwIjoxNzYzMDYzMzc1fQ.gqv3_-KNPw2nWQbEVRydJcV05WGGiVpF_k8s3eNhwS8"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/content/mores","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 500","name":"AxiosError","stack":"AxiosError: Request failed with status code 500\n    at settle (http://localhost:3000/_next/static/chunks/node_modules__pnpm_3e5edff9._.js:4008:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules__pnpm_3e5edff9._.js:4523:225)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules__pnpm_3e5edff9._.js:5327:49)\n    at async createContents (http://localhost:3000/_next/static/chunks/src_c288791d._.js?id=%255Bproject%255D%252Fsrc%252Fservices%252Fcontent.request.ts+%255Bapp-client%255D+%2528ecmascript%2529:25:22)\n    at async NewContentModal.useMutation [as mutationFn] (http://localhost:3000/_next/static/chunks/src_c288791d._.js?id=%255Bproject%255D%252Fsrc%252Fcomponents%252Fmodals%252FnewContent.tsx+%255Bapp-client%255D+%2528ecmascript%2529:165:17)","status":500}
+[00:56:41.884] Browser ERROR   unhandledRejection: AxiosError: Request failed with status code 500
+[00:56:47.612] Browser LOG     [{"Content":[],"Topic":[{"id":"6440c4c7-5640-45d2-81d6-687c94ead5d2","lessonId":"eebcdc3d-f637-4a61-8dda-3c56c7f8d87a","name":"teste"}],"completedContents":0,"completedDuration":0,"contentTypes":[],"discipline":{"color":"#ff6900","contestId":"a412c461-3ffe-4fae-9eb4-6ad7211907fe","id":"8e8729e2-4860-4853-93bd-e6cab25abbd9","name":"Matemática"},"disciplineId":"8e8729e2-4860-4853-93bd-e6cab25abbd9","id":"eebcdc3d-f637-4a61-8dda-3c56c7f8d87a","numberLesson":0,"stageId":"db926533-ac52-4b16-87fe-bec71c1cff00","topicTitles":["teste"],"totalContents":0,"totalDuration":0}]
+[00:58:52.253] Server  LOG      ✓ Compiled in 150ms
+[00:58:52.658] Browser WARN    Select is changing from controlled to uncontrolled. Components should not switch from controlled to uncontrolled (or vice versa). Decide between using a controlled or uncontrolled value for the lifetime of the component.
+[00:58:52.658] Browser WARN    Select is changing from controlled to uncontrolled. Components should not switch from controlled to uncontrolled (or vice versa). Decide between using a controlled or uncontrolled value for the lifetime of the component.
+[00:58:52.658] Browser WARN    RadioGroup is changing from controlled to uncontrolled. Components should not switch from controlled to uncontrolled (or vice versa). Decide between using a controlled or uncontrolled value for the lifetime of the component.
+[00:58:52.658] Browser LOG     [{"Content":[],"Topic":[{"id":"6440c4c7-5640-45d2-81d6-687c94ead5d2","lessonId":"eebcdc3d-f637-4a61-8dda-3c56c7f8d87a","name":"teste"}],"completedContents":0,"completedDuration":0,"contentTypes":[],"discipline":{"color":"#ff6900","contestId":"a412c461-3ffe-4fae-9eb4-6ad7211907fe","id":"8e8729e2-4860-4853-93bd-e6cab25abbd9","name":"Matemática"},"disciplineId":"8e8729e2-4860-4853-93bd-e6cab25abbd9","id":"eebcdc3d-f637-4a61-8dda-3c56c7f8d87a","numberLesson":0,"stageId":"db926533-ac52-4b16-87fe-bec71c1cff00","topicTitles":["teste"],"totalContents":0,"totalDuration":0}]
+[00:58:52.658] Browser LOG     [{"Content":[],"Topic":[{"id":"6440c4c7-5640-45d2-81d6-687c94ead5d2","lessonId":"eebcdc3d-f637-4a61-8dda-3c56c7f8d87a","name":"teste"}],"completedContents":0,"completedDuration":0,"contentTypes":[],"discipline":{"color":"#ff6900","contestId":"a412c461-3ffe-4fae-9eb4-6ad7211907fe","id":"8e8729e2-4860-4853-93bd-e6cab25abbd9","name":"Matemática"},"disciplineId":"8e8729e2-4860-4853-93bd-e6cab25abbd9","id":"eebcdc3d-f637-4a61-8dda-3c56c7f8d87a","numberLesson":0,"stageId":"db926533-ac52-4b16-87fe-bec71c1cff00","topicTitles":["teste"],"totalContents":0,"totalDuration":0}]
+[00:58:52.860] Browser LOG     [{"Content":[],"Topic":[{"id":"6440c4c7-5640-45d2-81d6-687c94ead5d2","lessonId":"eebcdc3d-f637-4a61-8dda-3c56c7f8d87a","name":"teste"}],"completedContents":0,"completedDuration":0,"contentTypes":[],"discipline":{"color":"#ff6900","contestId":"a412c461-3ffe-4fae-9eb4-6ad7211907fe","id":"8e8729e2-4860-4853-93bd-e6cab25abbd9","name":"Matemática"},"disciplineId":"8e8729e2-4860-4853-93bd-e6cab25abbd9","id":"eebcdc3d-f637-4a61-8dda-3c56c7f8d87a","numberLesson":0,"stageId":"db926533-ac52-4b16-87fe-bec71c1cff00","topicTitles":["teste"],"totalContents":0,"totalDuration":0}]
+[00:59:02.210] Browser WARN    Select is changing from uncontrolled to controlled. Components should not switch from controlled to uncontrolled (or vice versa). Decide between using a controlled or uncontrolled value for the lifetime of the component.
+[00:59:03.462] Browser WARN    Select is changing from uncontrolled to controlled. Components should not switch from controlled to uncontrolled (or vice versa). Decide between using a controlled or uncontrolled value for the lifetime of the component.
+[00:59:04.371] Browser WARN    RadioGroup is changing from uncontrolled to controlled. Components should not switch from controlled to uncontrolled (or vice versa). Decide between using a controlled or uncontrolled value for the lifetime of the component.
+[00:59:56.208] Browser ERROR   Erro ao criar aula: {"code":"ERR_BAD_RESPONSE","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:3333","data":"[{\"numberContent\":0,\"durationSeconds\":1810,\"lessonId\":\"eebcdc3d-f637-4a61-8dda-3c56c7f8d87a\",\"contentTypeId\":\"29a98167-eb71-4ce6-867d-6a58ec93fd33\"}]","env":{},"headers":{"Accept":"application/json, text/plain, */*","Content-Type":"application/json","authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOnsiaWQiOiIzYmU5ZWUwMi01N2FiLTQ5Y2YtYjIwNS1jMWQwMGM1ZTAxYjciLCJuYW1lIjoiSGVucmlxdWUgQW5qb3MiLCJlbWFpbCI6ImhlbnJpcXVlLmFhMDFAZ21haWwuY29tIn0sImlhdCI6MTc2Mjk3Njk3NSwiZXhwIjoxNzYzMDYzMzc1fQ.gqv3_-KNPw2nWQbEVRydJcV05WGGiVpF_k8s3eNhwS8"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/content/mores","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 500","name":"AxiosError","stack":"AxiosError: Request failed with status code 500\n    at settle (http://localhost:3000/_next/static/chunks/node_modules__pnpm_3e5edff9._.js:4008:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules__pnpm_3e5edff9._.js:4523:225)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules__pnpm_3e5edff9._.js:5327:49)\n    at async createContents (http://localhost:3000/_next/static/chunks/src_c288791d._.js?id=%255Bproject%255D%252Fsrc%252Fservices%252Fcontent.request.ts+%255Bapp-client%255D+%2528ecmascript%2529:25:22)\n    at async NewContentModal.useMutation [as mutationFn] (http://localhost:3000/_next/static/chunks/src_c288791d._.js?id=%255Bproject%255D%252Fsrc%252Fcomponents%252Fmodals%252FnewContent.tsx+%255Bapp-client%255D+%2528ecmascript%2529:165:17)","status":500}
+[00:59:56.208] Browser ERROR   unhandledRejection: AxiosError: Request failed with status code 500
+[01:00:53.924] Browser LOG     [{"Content":[],"Topic":[{"id":"6440c4c7-5640-45d2-81d6-687c94ead5d2","lessonId":"eebcdc3d-f637-4a61-8dda-3c56c7f8d87a","name":"teste"}],"completedContents":0,"completedDuration":0,"contentTypes":[],"discipline":{"color":"#ff6900","contestId":"a412c461-3ffe-4fae-9eb4-6ad7211907fe","id":"8e8729e2-4860-4853-93bd-e6cab25abbd9","name":"Matemática"},"disciplineId":"8e8729e2-4860-4853-93bd-e6cab25abbd9","id":"eebcdc3d-f637-4a61-8dda-3c56c7f8d87a","numberLesson":0,"stageId":"db926533-ac52-4b16-87fe-bec71c1cff00","topicTitles":["teste"],"totalContents":0,"totalDuration":0}]
+[01:03:10.911] Browser LOG     [{"Content":[],"Topic":[{"id":"6440c4c7-5640-45d2-81d6-687c94ead5d2","lessonId":"eebcdc3d-f637-4a61-8dda-3c56c7f8d87a","name":"teste"}],"completedContents":0,"completedDuration":0,"contentTypes":[],"discipline":{"color":"#ff6900","contestId":"a412c461-3ffe-4fae-9eb4-6ad7211907fe","id":"8e8729e2-4860-4853-93bd-e6cab25abbd9","name":"Matemática"},"disciplineId":"8e8729e2-4860-4853-93bd-e6cab25abbd9","id":"eebcdc3d-f637-4a61-8dda-3c56c7f8d87a","numberLesson":0,"stageId":"db926533-ac52-4b16-87fe-bec71c1cff00","topicTitles":["teste"],"totalContents":0,"totalDuration":0}]
+[01:03:17.067] Browser WARN    Select is changing from controlled to uncontrolled. Components should not switch from controlled to uncontrolled (or vice versa). Decide between using a controlled or uncontrolled value for the lifetime of the component.
+[01:03:17.067] Browser WARN    Select is changing from controlled to uncontrolled. Components should not switch from controlled to uncontrolled (or vice versa). Decide between using a controlled or uncontrolled value for the lifetime of the component.
+[01:03:17.067] Browser WARN    RadioGroup is changing from controlled to uncontrolled. Components should not switch from controlled to uncontrolled (or vice versa). Decide between using a controlled or uncontrolled value for the lifetime of the component.
+[01:03:28.315] Browser LOG     [{"Content":[{"Register":[],"contentType":{"id":"29a98167-eb71-4ce6-867d-6a58ec93fd33","name":"video"},"contentTypeId":"29a98167-eb71-4ce6-867d-6a58ec93fd33","durationSeconds":1810,"id":"52c25ec1-b0a8-4a04-8aba-c1eecf43a44f","lessonId":"eebcdc3d-f637-4a61-8dda-3c56c7f8d87a","numberContent":0}],"Topic":[{"id":"6440c4c7-5640-45d2-81d6-687c94ead5d2","lessonId":"eebcdc3d-f637-4a61-8dda-3c56c7f8d87a","name":"teste"}],"completedContents":0,"completedDuration":0,"contentTypes":["video"],"discipline":{"color":"#ff6900","contestId":"a412c461-3ffe-4fae-9eb4-6ad7211907fe","id":"8e8729e2-4860-4853-93bd-e6cab25abbd9","name":"Matemática"},"disciplineId":"8e8729e2-4860-4853-93bd-e6cab25abbd9","id":"eebcdc3d-f637-4a61-8dda-3c56c7f8d87a","numberLesson":0,"stageId":"db926533-ac52-4b16-87fe-bec71c1cff00","topicTitles":["teste"],"totalContents":1,"totalDuration":1810}]
+[01:03:34.794] Browser WARN    Select is changing from uncontrolled to controlled. Components should not switch from controlled to uncontrolled (or vice versa). Decide between using a controlled or uncontrolled value for the lifetime of the component.
+[01:03:36.642] Browser WARN    Select is changing from uncontrolled to controlled. Components should not switch from controlled to uncontrolled (or vice versa). Decide between using a controlled or uncontrolled value for the lifetime of the component.
+[01:03:37.865] Browser WARN    RadioGroup is changing from uncontrolled to controlled. Components should not switch from controlled to uncontrolled (or vice versa). Decide between using a controlled or uncontrolled value for the lifetime of the component.
+[01:03:59.410] Browser ERROR   Erro ao criar aula: {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:3333","data":"[{\"numberContent\":0,\"durationSeconds\":1810,\"lessonId\":\"eebcdc3d-f637-4a61-8dda-3c56c7f8d87a\",\"contentTypeId\":\"29a98167-eb71-4ce6-867d-6a58ec93fd33\"},{\"numberContent\":\"0\",\"durationSeconds\":632,\"lessonId\":\"eebcdc3d-f637-4a61-8dda-3c56c7f8d87a\",\"contentTypeId\":\"29a98167-eb71-4ce6-867d-6a58ec93fd33\"}]","env":{},"headers":{"Accept":"application/json, text/plain, */*","Content-Type":"application/json","authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOnsiaWQiOiIzYmU5ZWUwMi01N2FiLTQ5Y2YtYjIwNS1jMWQwMGM1ZTAxYjciLCJuYW1lIjoiSGVucmlxdWUgQW5qb3MiLCJlbWFpbCI6ImhlbnJpcXVlLmFhMDFAZ21haWwuY29tIn0sImlhdCI6MTc2Mjk3Njk3NSwiZXhwIjoxNzYzMDYzMzc1fQ.gqv3_-KNPw2nWQbEVRydJcV05WGGiVpF_k8s3eNhwS8"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/content/mores","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 400","name":"AxiosError","stack":"AxiosError: Request failed with status code 400\n    at settle (http://localhost:3000/_next/static/chunks/node_modules__pnpm_3e5edff9._.js:4008:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules__pnpm_3e5edff9._.js:4523:225)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules__pnpm_3e5edff9._.js:5327:49)\n    at async createContents (http://localhost:3000/_next/static/chunks/src_c288791d._.js?id=%255Bproject%255D%252Fsrc%252Fservices%252Fcontent.request.ts+%255Bapp-client%255D+%2528ecmascript%2529:25:22)\n    at async NewContentModal.useMutation [as mutationFn] (http://localhost:3000/_next/static/chunks/src_c288791d._.js?id=%255Bproject%255D%252Fsrc%252Fcomponents%252Fmodals%252FnewContent.tsx+%255Bapp-client%255D+%2528ecmascript%2529:165:17)","status":400}
+[01:03:59.410] Browser ERROR   unhandledRejection: AxiosError: Request failed with status code 400
+[01:04:06.090] Browser ERROR   Erro ao criar aula: {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:3333","data":"[{\"numberContent\":0,\"durationSeconds\":1810,\"lessonId\":\"eebcdc3d-f637-4a61-8dda-3c56c7f8d87a\",\"contentTypeId\":\"29a98167-eb71-4ce6-867d-6a58ec93fd33\"},{\"numberContent\":\"1\",\"durationSeconds\":632,\"lessonId\":\"eebcdc3d-f637-4a61-8dda-3c56c7f8d87a\",\"contentTypeId\":\"29a98167-eb71-4ce6-867d-6a58ec93fd33\"}]","env":{},"headers":{"Accept":"application/json, text/plain, */*","Content-Type":"application/json","authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOnsiaWQiOiIzYmU5ZWUwMi01N2FiLTQ5Y2YtYjIwNS1jMWQwMGM1ZTAxYjciLCJuYW1lIjoiSGVucmlxdWUgQW5qb3MiLCJlbWFpbCI6ImhlbnJpcXVlLmFhMDFAZ21haWwuY29tIn0sImlhdCI6MTc2Mjk3Njk3NSwiZXhwIjoxNzYzMDYzMzc1fQ.gqv3_-KNPw2nWQbEVRydJcV05WGGiVpF_k8s3eNhwS8"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/content/mores","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 400","name":"AxiosError","stack":"AxiosError: Request failed with status code 400\n    at settle (http://localhost:3000/_next/static/chunks/node_modules__pnpm_3e5edff9._.js:4008:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules__pnpm_3e5edff9._.js:4523:225)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules__pnpm_3e5edff9._.js:5327:49)\n    at async createContents (http://localhost:3000/_next/static/chunks/src_c288791d._.js?id=%255Bproject%255D%252Fsrc%252Fservices%252Fcontent.request.ts+%255Bapp-client%255D+%2528ecmascript%2529:25:22)\n    at async NewContentModal.useMutation [as mutationFn] (http://localhost:3000/_next/static/chunks/src_c288791d._.js?id=%255Bproject%255D%252Fsrc%252Fcomponents%252Fmodals%252FnewContent.tsx+%255Bapp-client%255D+%2528ecmascript%2529:165:17)","status":400}
+[01:04:06.090] Browser ERROR   unhandledRejection: AxiosError: Request failed with status code 400
+[01:04:12.577] Browser ERROR   Erro ao criar aula: {"code":"ERR_BAD_RESPONSE","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:3333","data":"[{\"numberContent\":\"2\",\"durationSeconds\":1810,\"lessonId\":\"eebcdc3d-f637-4a61-8dda-3c56c7f8d87a\",\"contentTypeId\":\"29a98167-eb71-4ce6-867d-6a58ec93fd33\"},{\"numberContent\":\"1\",\"durationSeconds\":632,\"lessonId\":\"eebcdc3d-f637-4a61-8dda-3c56c7f8d87a\",\"contentTypeId\":\"29a98167-eb71-4ce6-867d-6a58ec93fd33\"}]","env":{},"headers":{"Accept":"application/json, text/plain, */*","Content-Type":"application/json","authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOnsiaWQiOiIzYmU5ZWUwMi01N2FiLTQ5Y2YtYjIwNS1jMWQwMGM1ZTAxYjciLCJuYW1lIjoiSGVucmlxdWUgQW5qb3MiLCJlbWFpbCI6ImhlbnJpcXVlLmFhMDFAZ21haWwuY29tIn0sImlhdCI6MTc2Mjk3Njk3NSwiZXhwIjoxNzYzMDYzMzc1fQ.gqv3_-KNPw2nWQbEVRydJcV05WGGiVpF_k8s3eNhwS8"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/content/mores","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 500","name":"AxiosError","stack":"AxiosError: Request failed with status code 500\n    at settle (http://localhost:3000/_next/static/chunks/node_modules__pnpm_3e5edff9._.js:4008:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules__pnpm_3e5edff9._.js:4523:225)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules__pnpm_3e5edff9._.js:5327:49)\n    at async createContents (http://localhost:3000/_next/static/chunks/src_c288791d._.js?id=%255Bproject%255D%252Fsrc%252Fservices%252Fcontent.request.ts+%255Bapp-client%255D+%2528ecmascript%2529:25:22)\n    at async NewContentModal.useMutation [as mutationFn] (http://localhost:3000/_next/static/chunks/src_c288791d._.js?id=%255Bproject%255D%252Fsrc%252Fcomponents%252Fmodals%252FnewContent.tsx+%255Bapp-client%255D+%2528ecmascript%2529:165:17)","status":500}
+[01:04:12.577] Browser ERROR   unhandledRejection: AxiosError: Request failed with status code 500
+[01:04:28.737] Browser LOG     [{"Content":[{"Register":[],"contentType":{"id":"29a98167-eb71-4ce6-867d-6a58ec93fd33","name":"video"},"contentTypeId":"29a98167-eb71-4ce6-867d-6a58ec93fd33","durationSeconds":1810,"id":"52c25ec1-b0a8-4a04-8aba-c1eecf43a44f","lessonId":"eebcdc3d-f637-4a61-8dda-3c56c7f8d87a","numberContent":0}],"Topic":[{"id":"6440c4c7-5640-45d2-81d6-687c94ead5d2","lessonId":"eebcdc3d-f637-4a61-8dda-3c56c7f8d87a","name":"teste"}],"completedContents":0,"completedDuration":0,"contentTypes":["video"],"discipline":{"color":"#ff6900","contestId":"a412c461-3ffe-4fae-9eb4-6ad7211907fe","id":"8e8729e2-4860-4853-93bd-e6cab25abbd9","name":"Matemática"},"disciplineId":"8e8729e2-4860-4853-93bd-e6cab25abbd9","id":"eebcdc3d-f637-4a61-8dda-3c56c7f8d87a","numberLesson":0,"stageId":"db926533-ac52-4b16-87fe-bec71c1cff00","topicTitles":["teste"],"totalContents":1,"totalDuration":1810}]
+[01:05:07.861] Server  LOG      ✓ Compiled in 234ms
+[01:05:08.668] Browser LOG     [{"Content":[{"Register":[],"contentType":{"id":"29a98167-eb71-4ce6-867d-6a58ec93fd33","name":"video"},"contentTypeId":"29a98167-eb71-4ce6-867d-6a58ec93fd33","durationSeconds":1810,"id":"52c25ec1-b0a8-4a04-8aba-c1eecf43a44f","lessonId":"eebcdc3d-f637-4a61-8dda-3c56c7f8d87a","numberContent":0}],"Topic":[{"id":"6440c4c7-5640-45d2-81d6-687c94ead5d2","lessonId":"eebcdc3d-f637-4a61-8dda-3c56c7f8d87a","name":"teste"}],"completedContents":0,"completedDuration":0,"contentTypes":["video"],"discipline":{"color":"#ff6900","contestId":"a412c461-3ffe-4fae-9eb4-6ad7211907fe","id":"8e8729e2-4860-4853-93bd-e6cab25abbd9","name":"Matemática"},"disciplineId":"8e8729e2-4860-4853-93bd-e6cab25abbd9","id":"eebcdc3d-f637-4a61-8dda-3c56c7f8d87a","numberLesson":0,"stageId":"db926533-ac52-4b16-87fe-bec71c1cff00","topicTitles":["teste"],"totalContents":1,"totalDuration":1810}]
+[01:05:08.672] Browser WARN    Select is changing from controlled to uncontrolled. Components should not switch from controlled to uncontrolled (or vice versa). Decide between using a controlled or uncontrolled value for the lifetime of the component.
+[01:05:08.672] Browser WARN    Select is changing from controlled to uncontrolled. Components should not switch from controlled to uncontrolled (or vice versa). Decide between using a controlled or uncontrolled value for the lifetime of the component.
+[01:05:08.672] Browser WARN    RadioGroup is changing from controlled to uncontrolled. Components should not switch from controlled to uncontrolled (or vice versa). Decide between using a controlled or uncontrolled value for the lifetime of the component.
+[01:05:08.672] Browser LOG     [{"Content":[{"Register":[],"contentType":{"id":"29a98167-eb71-4ce6-867d-6a58ec93fd33","name":"video"},"contentTypeId":"29a98167-eb71-4ce6-867d-6a58ec93fd33","durationSeconds":1810,"id":"52c25ec1-b0a8-4a04-8aba-c1eecf43a44f","lessonId":"eebcdc3d-f637-4a61-8dda-3c56c7f8d87a","numberContent":0}],"Topic":[{"id":"6440c4c7-5640-45d2-81d6-687c94ead5d2","lessonId":"eebcdc3d-f637-4a61-8dda-3c56c7f8d87a","name":"teste"}],"completedContents":0,"completedDuration":0,"contentTypes":["video"],"discipline":{"color":"#ff6900","contestId":"a412c461-3ffe-4fae-9eb4-6ad7211907fe","id":"8e8729e2-4860-4853-93bd-e6cab25abbd9","name":"Matemática"},"disciplineId":"8e8729e2-4860-4853-93bd-e6cab25abbd9","id":"eebcdc3d-f637-4a61-8dda-3c56c7f8d87a","numberLesson":0,"stageId":"db926533-ac52-4b16-87fe-bec71c1cff00","topicTitles":["teste"],"totalContents":1,"totalDuration":1810}]
+[01:05:08.884] Browser LOG     [{"Content":[{"Register":[],"contentType":{"id":"29a98167-eb71-4ce6-867d-6a58ec93fd33","name":"video"},"contentTypeId":"29a98167-eb71-4ce6-867d-6a58ec93fd33","durationSeconds":1810,"id":"52c25ec1-b0a8-4a04-8aba-c1eecf43a44f","lessonId":"eebcdc3d-f637-4a61-8dda-3c56c7f8d87a","numberContent":0}],"Topic":[{"id":"6440c4c7-5640-45d2-81d6-687c94ead5d2","lessonId":"eebcdc3d-f637-4a61-8dda-3c56c7f8d87a","name":"teste"}],"completedContents":0,"completedDuration":0,"contentTypes":["video"],"discipline":{"color":"#ff6900","contestId":"a412c461-3ffe-4fae-9eb4-6ad7211907fe","id":"8e8729e2-4860-4853-93bd-e6cab25abbd9","name":"Matemática"},"disciplineId":"8e8729e2-4860-4853-93bd-e6cab25abbd9","id":"eebcdc3d-f637-4a61-8dda-3c56c7f8d87a","numberLesson":0,"stageId":"db926533-ac52-4b16-87fe-bec71c1cff00","topicTitles":["teste"],"totalContents":1,"totalDuration":1810}]
+[01:05:15.654] Browser WARN    Select is changing from uncontrolled to controlled. Components should not switch from controlled to uncontrolled (or vice versa). Decide between using a controlled or uncontrolled value for the lifetime of the component.
+[01:05:17.872] Browser WARN    Select is changing from uncontrolled to controlled. Components should not switch from controlled to uncontrolled (or vice versa). Decide between using a controlled or uncontrolled value for the lifetime of the component.
+[01:05:18.692] Browser WARN    RadioGroup is changing from uncontrolled to controlled. Components should not switch from controlled to uncontrolled (or vice versa). Decide between using a controlled or uncontrolled value for the lifetime of the component.
+[01:05:30.479] Browser ERROR   Erro ao criar aula: {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:3333","data":"[{\"numberContent\":0,\"durationSeconds\":1810,\"lessonId\":\"eebcdc3d-f637-4a61-8dda-3c56c7f8d87a\",\"contentTypeId\":\"29a98167-eb71-4ce6-867d-6a58ec93fd33\"}]","env":{},"headers":{"Accept":"application/json, text/plain, */*","Content-Type":"application/json","authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOnsiaWQiOiIzYmU5ZWUwMi01N2FiLTQ5Y2YtYjIwNS1jMWQwMGM1ZTAxYjciLCJuYW1lIjoiSGVucmlxdWUgQW5qb3MiLCJlbWFpbCI6ImhlbnJpcXVlLmFhMDFAZ21haWwuY29tIn0sImlhdCI6MTc2Mjk3Njk3NSwiZXhwIjoxNzYzMDYzMzc1fQ.gqv3_-KNPw2nWQbEVRydJcV05WGGiVpF_k8s3eNhwS8"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/content/mores","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 400","name":"AxiosError","stack":"AxiosError: Request failed with status code 400\n    at settle (http://localhost:3000/_next/static/chunks/node_modules__pnpm_3e5edff9._.js:4008:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules__pnpm_3e5edff9._.js:4523:225)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules__pnpm_3e5edff9._.js:5327:49)\n    at async createContents (http://localhost:3000/_next/static/chunks/src_c288791d._.js?id=%255Bproject%255D%252Fsrc%252Fservices%252Fcontent.request.ts+%255Bapp-client%255D+%2528ecmascript%2529:25:22)\n    at async NewContentModal.useMutation [as mutationFn] (http://localhost:3000/_next/static/chunks/src_c288791d._.js?id=%255Bproject%255D%252Fsrc%252Fcomponents%252Fmodals%252FnewContent.tsx+%255Bapp-client%255D+%2528ecmascript%2529:165:17)","status":400}
+[01:05:30.479] Browser ERROR   unhandledRejection: AxiosError: Request failed with status code 400
+[01:05:41.001] Browser ERROR   Erro ao criar aula: {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:3333","data":"[{\"numberContent\":0,\"durationSeconds\":1810,\"lessonId\":\"eebcdc3d-f637-4a61-8dda-3c56c7f8d87a\",\"contentTypeId\":\"29a98167-eb71-4ce6-867d-6a58ec93fd33\"},{\"numberContent\":0,\"durationSeconds\":632,\"lessonId\":\"eebcdc3d-f637-4a61-8dda-3c56c7f8d87a\",\"contentTypeId\":\"29a98167-eb71-4ce6-867d-6a58ec93fd33\"}]","env":{},"headers":{"Accept":"application/json, text/plain, */*","Content-Type":"application/json","authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOnsiaWQiOiIzYmU5ZWUwMi01N2FiLTQ5Y2YtYjIwNS1jMWQwMGM1ZTAxYjciLCJuYW1lIjoiSGVucmlxdWUgQW5qb3MiLCJlbWFpbCI6ImhlbnJpcXVlLmFhMDFAZ21haWwuY29tIn0sImlhdCI6MTc2Mjk3Njk3NSwiZXhwIjoxNzYzMDYzMzc1fQ.gqv3_-KNPw2nWQbEVRydJcV05WGGiVpF_k8s3eNhwS8"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/content/mores","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 400","name":"AxiosError","stack":"AxiosError: Request failed with status code 400\n    at settle (http://localhost:3000/_next/static/chunks/node_modules__pnpm_3e5edff9._.js:4008:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules__pnpm_3e5edff9._.js:4523:225)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules__pnpm_3e5edff9._.js:5327:49)\n    at async createContents (http://localhost:3000/_next/static/chunks/src_c288791d._.js?id=%255Bproject%255D%252Fsrc%252Fservices%252Fcontent.request.ts+%255Bapp-client%255D+%2528ecmascript%2529:25:22)\n    at async NewContentModal.useMutation [as mutationFn] (http://localhost:3000/_next/static/chunks/src_c288791d._.js?id=%255Bproject%255D%252Fsrc%252Fcomponents%252Fmodals%252FnewContent.tsx+%255Bapp-client%255D+%2528ecmascript%2529:165:17)","status":400}
+[01:05:41.001] Browser ERROR   unhandledRejection: AxiosError: Request failed with status code 400
+[01:05:47.296] Browser WARN    Select is changing from controlled to uncontrolled. Components should not switch from controlled to uncontrolled (or vice versa). Decide between using a controlled or uncontrolled value for the lifetime of the component.
+[01:05:47.297] Browser WARN    Select is changing from controlled to uncontrolled. Components should not switch from controlled to uncontrolled (or vice versa). Decide between using a controlled or uncontrolled value for the lifetime of the component.
+[01:05:47.297] Browser WARN    RadioGroup is changing from controlled to uncontrolled. Components should not switch from controlled to uncontrolled (or vice versa). Decide between using a controlled or uncontrolled value for the lifetime of the component.
+[01:06:00.775] Browser LOG     [{"Content":[{"Register":[],"contentType":{"id":"29a98167-eb71-4ce6-867d-6a58ec93fd33","name":"video"},"contentTypeId":"29a98167-eb71-4ce6-867d-6a58ec93fd33","durationSeconds":1810,"id":"52c25ec1-b0a8-4a04-8aba-c1eecf43a44f","lessonId":"eebcdc3d-f637-4a61-8dda-3c56c7f8d87a","numberContent":0},{"Register":[],"contentType":{"id":"29a98167-eb71-4ce6-867d-6a58ec93fd33","name":"video"},"contentTypeId":"29a98167-eb71-4ce6-867d-6a58ec93fd33","durationSeconds":1810,"id":"1f05a6f3-d675-427e-80b1-5b686130de16","lessonId":"eebcdc3d-f637-4a61-8dda-3c56c7f8d87a","numberContent":1},{"Register":[],"contentType":{"id":"29a98167-eb71-4ce6-867d-6a58ec93fd33","name":"video"},"contentTypeId":"29a98167-eb71-4ce6-867d-6a58ec93fd33","durationSeconds":632,"id":"5a3a0d14-9951-47c0-8533-c70e7cacc4eb","lessonId":"eebcdc3d-f637-4a61-8dda-3c56c7f8d87a","numberContent":2}],"Topic":[{"id":"6440c4c7-5640-45d2-81d6-687c94ead5d2","lessonId":"eebcdc3d-f637-4a61-8dda-3c56c7f8d87a","name":"teste"}],"completedContents":0,"completedDuration":0,"contentTypes":["video"],"discipline":{"color":"#ff6900","contestId":"a412c461-3ffe-4fae-9eb4-6ad7211907fe","id":"8e8729e2-4860-4853-93bd-e6cab25abbd9","name":"Matemática"},"disciplineId":"8e8729e2-4860-4853-93bd-e6cab25abbd9","id":"eebcdc3d-f637-4a61-8dda-3c56c7f8d87a","numberLesson":0,"stageId":"db926533-ac52-4b16-87fe-bec71c1cff00","topicTitles":["teste"],"totalContents":3,"totalDuration":4252}]

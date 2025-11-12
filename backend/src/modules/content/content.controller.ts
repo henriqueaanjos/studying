@@ -17,6 +17,13 @@ export class ContentController {
   constructor(private readonly contentService: ContentService) {}
 
   @UseGuards(AuthGuard)
+  @Post('/mores')
+  createContents(@Body() data: ContentDTO[]) {
+    console.log(data);
+    return this.contentService.createContents(data);
+  }
+
+  @UseGuards(AuthGuard)
   @Post()
   create(@Body() data: ContentDTO) {
     console.log(data);
