@@ -180,7 +180,7 @@ export function NewContentModal({ isOpen, onClose }: DialogProps) {
     }, [onClose, reset]);
 
     return (
-        <Dialog open={isOpen} onOpenChange={onClose}>
+        <Dialog open={isOpen} onOpenChange={onClose} >
             <DialogContent>
                 <DialogHeader>
                     <DialogTitle className="text-xl font-black flex flex-row gap-2 items-center">
@@ -191,7 +191,7 @@ export function NewContentModal({ isOpen, onClose }: DialogProps) {
                         Adicione um novo Conteúdo à uma aula.
                     </DialogDescription>
                 </DialogHeader>
-                <form className="flex flex-col gap-4">
+                <form className="flex flex-col gap-4 overflow-y-auto max-h-[60vh]">
                     <Controller
                         control={control}
                         name="discipline"
